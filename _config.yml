@@ -1,4 +1,4 @@
-title: HealthCare.gov
+title: Think Open Solutions Brasil
 siteurl: 'http://www.thinkopensolutions.com.br'
 
 safe:        true
@@ -44,11 +44,26 @@ prose:
   site:
     tags: "http://www.thinkopensolutions.com.br/api/tags.jsonp"
   metadata:
-    _posts:
+    _posts/blog:
       - name: "title"
         field:
           element: "text"
           label: "Title"
+          value: ""
+      - name: "meta-title"
+        field:
+          element: "text"
+          label: "Meta Title"
+          value: ""
+      - name: "meta-description"
+        field:
+          element: "text"
+          label: "Meta Description" 
+          value: ""
+      - name: "title-short"
+        field:
+          element: "text"
+          label: "Title Short"
           value: ""
       - name: "layout"
         field:

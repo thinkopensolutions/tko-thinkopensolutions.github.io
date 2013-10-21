@@ -2,11 +2,13 @@
 <!--[if IE 8]>			<html class="ie ie8"> <![endif]-->
 <!--[if IE 9]>			<html class="ie ie9"> <![endif]-->
 <!--[if gt IE 9]><!-->	<html> <!--<![endif]-->
-   <head>
+   <head lang="pt-br">
 	  <meta charset="utf-8">
-      <title>{{ page.title }} &#8211; Think Open Solutions Brasil</title>
-      <meta name="description" content="Think Open Solutions Brasil">
+	  
+	  <title>{% if page.meta-title %}{{page.meta-title}}{% else %}{{page.title}}{% endif %} &#8211; {{site.title}}</title>
+      <meta name='description' content="{% if page.meta-description %}{{page.meta-description | replace:'"','\"'}}{% else %}{{page.bite | replace:'"','\"'}}{% endif %}" />
       <meta name="author" content="thinkopensolutions.com.br">
+	  
       <!-- Mobile Metas -->
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <!-- Google Fonts  -->
