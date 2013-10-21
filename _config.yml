@@ -34,3 +34,39 @@ kramdown:
     coderay_tab_width: 4
     coderay_bold_every: 10
     coderay_css: style
+
+# Prose settings
+prose:
+  media: 'assets'
+  rooturl: "_posts"
+  siteurl: "http://www.thinkopensolutions.com.br/"
+  relativeLinks: "http://www.thinkopensolutions.gov/resources/prose/relativeLinks.jsonp"
+  site:
+    tags: "http://www.thinkopensolutions.com.br/api/tags.jsonp"
+  metadata:
+    _posts:
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+          value: ""
+      - name: "layout"
+        field:
+          element: "select"
+          label: "Select a layout"
+          placeholder: "Default"
+          options:
+            - name: "blog"
+              value: "blog"
+          selected: "blog"
+      - name: "comments"
+        field:
+          element: "select"
+          label: "Enable comments"
+          placeholder: "Default"
+          options:
+            - name: "yes"
+              value: "yes"
+            - name: "no"
+              value: "no"
+          selected: "yes"
