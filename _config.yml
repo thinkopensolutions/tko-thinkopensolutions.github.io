@@ -1,5 +1,6 @@
 title: Think Open Solutions Brasil
 siteurl: 'http://www.thinkopensolutions.com.br'
+lang: pt-br
 
 safe:        true
 auto:        true
@@ -15,7 +16,8 @@ future:      true
 lsi:         false
 pygments:    false
 markdown:    rdiscount
-permalink:   pretty
+#permalink:   pretty
+permalink: /:categories/:title
 
 rdiscount:
   extensions: [smart]
@@ -34,6 +36,15 @@ kramdown:
     coderay_tab_width: 4
     coderay_bold_every: 10
     coderay_css: style
+
+# Advanced list sorting
+jekyll_sort:
+  - src: posts
+    by: date
+    direction: down
+    dest: blogposts
+    include_categories:
+    - blog
 
 # Prose settings
 prose:
