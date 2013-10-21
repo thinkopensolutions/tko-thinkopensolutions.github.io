@@ -1,12 +1,12 @@
 ---
-lang: en
+lang: pt-br
 number_of_items: 40
 ---
 {% assign t = site.tags.translations[0] %}<?xml version="1.0" encoding="utf-8" ?>
 <rss version="2.0" xml:base="{{site.siteurl}}{{site.baseurl}}" xmlns:dc="http://purl.org/dc/elements/1.1/">
 <channel>
   <title>{{t.[page.lang].blog.title}} - {{t.[page.lang].utility.sitename}}</title>
-  {% if page.lang == 'en' %}
+  {% if page.lang == 'pt-br' %}
   {% capture rsslink %}{{site.siteurl}}{{site.baseurl}}/blog{% endcapture %}
   {% else %}
   {% capture rsslink %}{{site.siteurl}}{{site.baseurl}}/{{page.lang}}/blog{% endcapture %}

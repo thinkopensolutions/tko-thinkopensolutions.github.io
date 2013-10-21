@@ -1,41 +1,49 @@
+# Sitewide configuration settings. Set `title` to the site title, which
+# will be appended to the URL following {{page.title}} |
+
 title: Think Open Solutions Brasil
-siteurl: 'http://www.thinkopensolutions.com.br'
-lang: pt-br
-
-safe:        true
-auto:        true
-server:      false
-server_port: 4000
+auto: true
+server: true
 url: http://localhost:4000
-
-source:      .
-destination: ./_site
-plugins:     ./_plugins
-
-future:      true
-lsi:         false
-pygments:    false
-markdown:    rdiscount
-#permalink:   pretty
+baseurl: 
 permalink: /:categories/:title
-
-rdiscount:
-  extensions: [smart]
-
-kramdown:
-  auto_ids: true,
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  use_coderay: false
+markdown: rdiscount
+exclude:
+  - .gitignore
+  - README.md
+  - ga-api-privatekey.p12
+  - Gemfile
+  - Gemfile.lock
+languages: &languages
+  - name: 'Portugu&ecirc;s'
+    value: 'pt-br'
+  #- name: 'English'
+  #  value: 'en'
+  #- name: 'Espa&ntilde;ol'
+  #  value: 'es'
+siteurl: 'http://www.thinkopensolutions.com.br'
+searchurl: 'http://search.thinkopensolutions.com.br'
+searchproxy: 'http://www.thinkopensolutions.com.br'
+   
+# Custom Collections
+# Creates a globally accessible list of posts based on these specified metadata variables
+jekyll_collect:
+  - topics
   
-  coderay:
-    coderay_wrap: div
-    coderay_line_numbers: inline
-    coderay_line_numbers_start: 1
-    coderay_tab_width: 4
-    coderay_bold_every: 10
-    coderay_css: style
+# Settings for Google Analytics post sorting
+jekyll_ga:
+  host: 'insert_host'
+  port: 'insert_port'
+  service_account_email: 527118645338@developer.gserviceaccount.com
+  key_file: ga-api-privatekey.p12
+  key_secret: notasecret
+  profileID: ga:78051758
+  start: last month         # Beginning of report
+  end: now                  # End of report
+  metric: ga:pageviews      # Metric code
+  segment:                  # optional
+  filters:                  # optional
+  sort: true                # Sort posts by this metric
 
 # Advanced list sorting
 jekyll_sort:
@@ -45,13 +53,19 @@ jekyll_sort:
     dest: blogposts
     include_categories:
     - blog
+  - src: posts
+    by: title
+    direction: up
+    dest: glossary
+    include_categories:
+    - glossary
 
 # Prose settings
 prose:
   media: 'assets'
   rooturl: "_posts"
-  siteurl: "http://www.thinkopensolutions.com.br/"
-  relativeLinks: "http://www.thinkopensolutions.gov/resources/prose/relativeLinks.jsonp"
+  siteurl: "http://www.thinkopensolutions.com.br"
+  relativeLinks: "http://www.thinkopensolutions.com.br/resources/prose/relativeLinks.jsonp"
   site:
     tags: "http://www.thinkopensolutions.com.br/api/tags.jsonp"
   metadata:
