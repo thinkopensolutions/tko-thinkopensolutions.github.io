@@ -22,7 +22,7 @@
       <!-- Theme CSS -->
       <link rel="stylesheet" href="css/style.css">
       <!-- Skin -->
-      <link rel="stylesheet" href="css/colors/blue.css">
+      <link rel="stylesheet" href="css/colors/purple.css">
       <!-- Responsive CSS -->
       <link rel="stylesheet" href="css/theme-responsive.css">
       <!-- Favicons -->
@@ -84,7 +84,7 @@
                   <div class="logo pull-left">
                      <h1>
                         <a href="index.html">
-                        <img src="img/logo.png" alt="pixma" width="125" height="60">
+                        <img src="img/logo.png" alt="pixma" width="156" height="60">
                         </a>
                      </h1>
                   </div>
