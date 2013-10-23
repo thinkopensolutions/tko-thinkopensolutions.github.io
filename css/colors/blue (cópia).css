@@ -1,5 +1,4 @@
-/* Purple Color #6c3583 */
-
+/*Blue #6c3583 */
 .btn:focus, .subscribe-btn, .progress .progress-bar, .accordionMod .panel-heading .current, #current:after, .tp-leftarrow.default:hover,.tp-rightarrow.default:hover, .nivo-prevNav:hover, .nivo-nextNav:hover, .contact-box:hover, #options li a.selected, .ch-info .ch-info-back {
     background: #6c3583;
 }
@@ -19,27 +18,27 @@
 }
 
 .ie8 .btn-color:hover, .ie9 .btn-color:hover {
-	background: #9c65b3 !important;
+	background: #9c65a3 !important;
 }
 
 .btn-color:hover, .subscribe-btn:hover {
-	background: -webkit-linear-gradient(#6c3583,#9c65b3);
-	background: -moz-linear-gradient(#6c3583,#9c65b3);
-	background: -o-linear-gradient(#6c3583,#9c65b3);
-	background: -ms-linear-gradient(#6c3583,#9c65b3);
-	background: linear-gradient(#6c3583,#9c65b3);
+	background: -webkit-linear-gradient(#6c3583,#9c65a3);
+	background: -moz-linear-gradient(#6c3583,#9c65a3);
+	background: -o-linear-gradient(#6c3583,#9c65a3);
+	background: -ms-linear-gradient(#6c3583,#9c65a3);
+	background: linear-gradient(#6c3583,#9c65a3);
 }
 
 .btn-color, .subscribe-btn {
-	background: -webkit-linear-gradient(#9c65b3,#6c3583);
-	background: -moz-linear-gradient(#9c65b3,#6c3583);
-	background: -o-linear-gradient(#9c65b3,#6c3583);
-	background: -ms-linear-gradient(#9c65b3,#6c3583);
-	background: linear-gradient(#9c65b3,#6c3583);
-	border: 1px solid #822e82;
+	background: -webkit-linear-gradient(#9c65a3,#6c3583);
+	background: -moz-linear-gradient(#9c65a3,#6c3583);
+	background: -o-linear-gradient(#9c65a3,#6c3583);
+	background: -ms-linear-gradient(#9c65a3,#6c3583);
+	background: linear-gradient(#9c65a3,#6c3583);
+	border: 1px solid #2f7295;
 
-	-webkit-box-shadow: inset 0 1px 1px 0 #de84de, 0 2px 0 -1px rgba(0,0,0,0.2);
-	box-shadow: inset 0 1px 1px 0 #de84de, 0 2px 0 -1px rgba(0,0,0,0.2);
+	-webkit-box-shadow: inset 0 1px 1px 0 #9fcee7, 0 2px 0 -1px rgba(0,0,0,0.2);
+	box-shadow: inset 0 1px 1px 0 #9fcee7, 0 2px 0 -1px rgba(0,0,0,0.2);
 	cursor: pointer;
 }
 
@@ -63,7 +62,6 @@ ul.why li:before {
 #vertical-tabs ul.tabs li.current {
     border-left: 2px solid #6c3583;
 }
-
 
 .author-content, div.content-box.big, #cn-tabs .service, .comment-des, .contact-box {
 	border-bottom-color:#6c3583;

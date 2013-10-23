@@ -1,5 +1,15 @@
+<<<<<<< HEAD
+safe:        true
+port: 4000
+url: http://localhost:4000
+
+source:      .
+destination: ./_site
+plugins:     ./_plugins
+=======
 # Sitewide configuration settings. Set `title` to the site title, which
 # will be appended to the URL following {{page.title}} |
+>>>>>>> 6e55c10b685bd05d1c02c11ae865e766361996e6
 
 title: Think Open Solutions Brasil
 auto: true

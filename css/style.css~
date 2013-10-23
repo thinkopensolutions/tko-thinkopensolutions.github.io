@@ -101,7 +101,7 @@ a:hover,a:focus {
     z-index: 9999;
     width: 100%;
     position: relative;
-	background:#6c3583;
+	background:#323B44;
     -webkit-box-shadow: 0 3px 3px -3px rgba(0,0,0,0.2);
     box-shadow: 0 3px 3px -3px rgba(0,0,0,0.2);
 }
