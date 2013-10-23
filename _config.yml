@@ -2,8 +2,6 @@
 # will be appended to the URL following {{page.title}} |
 
 title: Think Open Solutions Brasil
-auto: true
-server: true
 url: http://localhost:4000
 baseurl: 
 permalink: /:categories/:title
