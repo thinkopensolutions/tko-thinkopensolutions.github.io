@@ -16,8 +16,8 @@ body.boxed header {
 .logo img {
     max-width: 100%;
     position: relative;
-    /*height: 75px;
-    top: -22px;*/
+    height: 75px;
+    top: -22px;
 }
 
 h1,h2,h3,h4,h5,h6 {
