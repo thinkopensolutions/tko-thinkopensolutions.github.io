@@ -3,3 +3,4 @@ _site/
 todo
 Gemfile.lock
 ga-api-privatekey.p12
+*~
