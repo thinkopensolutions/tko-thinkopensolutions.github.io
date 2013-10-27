@@ -13,8 +13,11 @@ body.boxed header {
     overflow: hidden;
 }
 
-img {
+.logo img {
     max-width: 100%;
+    position: relative;
+    height: 75px;
+    top: -22px;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -927,7 +930,7 @@ ol.commentlist li:first-child {
 }
 
 .slogan-content {
-    padding: 25px 0;
+    padding: 15px 0;
 }
 
 .slogan-title {
@@ -1449,7 +1452,7 @@ span.color {
 
 /* Footer */
 .footer-top {
-    background: #323B44;
+    background: #3C0552;
 	border-bottom: 1px solid #414f5a;
     color: #A1A1A1;
     padding: 50px 0;
