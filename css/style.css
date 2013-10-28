@@ -13,8 +13,11 @@ body.boxed header {
     overflow: hidden;
 }
 
-.logo img {
+img {
     max-width: 100%;
+}
+
+.logo img {
     position: relative;
     height: 75px;
     top: -22px;
