@@ -1,10 +1,6 @@
 ---
-title: Sitemap
-layout: default
-sitemap:
-    priority: 0.7
-    changefreq: monthly
-    lastmod: 2013-03-29T12:49:30-05:00
+title: Mapa
+layout: page
 ---
 
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">

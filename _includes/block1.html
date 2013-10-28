@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<!--[if IE 8]>			<html class="ie ie8"> <![endif]-->
+<!--[if IE 9]>			<html class="ie ie9"> <![endif]-->
+<!--[if gt IE 9]><!-->	<html> <!--<![endif]-->
+	<head>
+		{% include head.html %}
+	</head>
+	{% if page.url == "/index.html" %}<body class="home">{% endif %}
+	{% if page.url == "/about.html" %}<body class="about page">{% endif %}
+	{% if page.url == "/services.html" %}<body class="page-services">{% endif %}
+	{% if page.url == "/contact.html" %}<body class="blog">{% endif %}
+		<div class="wrap">
+			{% include header.html %} 
+			<!-- Content Start -->
+			<div id="main">

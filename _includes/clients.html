@@ -1,0 +1,29 @@
+<div class="clients-title">
+    <h3 class="title">Nossos Clientes</h3>
+    <div class="carousel-controls pull-right">
+        <a class="prev" href="#client-carousel" data-slide="prev"><i class="icon-angle-left"></i></a>
+        <a class="next" href="#client-carousel" data-slide="next"><i class="icon-angle-right"></i></a>
+        <div class="clearfix"></div>
+    </div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+    <div id="client-carousel" class="client-carousel slide">
+        <div class="carousel-inner">
+            <div class="item active">
+				{% for post in site.clients limit: 4 %}
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 item animate_afc d1">
+		                <div class="item-inner"><a href="#"><img alt="Upportdash" src="{{ post: logo }}"></a></div>
+		            </div>
+				{% endfor %}
+            </div>
+            <div class="item">
+				{% for post in site.clients limit: 4 %}
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 item animate_afc d1">
+		                <div class="item-inner"><a href="#"><img alt="Upportdash" src="{{ post: logo }}"></a></div>
+		            </div>
+				{% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
