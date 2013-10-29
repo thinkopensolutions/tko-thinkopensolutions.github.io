@@ -4,5 +4,6 @@ layout: client
 categories:
  - clients
 logo: logo-primeschool.jpg
-link: http://www.primeschool.pt
 ---
+
+http://www.primeschool.pt
