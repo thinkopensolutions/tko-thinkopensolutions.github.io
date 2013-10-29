@@ -5,11 +5,8 @@
 	<head>
 		{% include head.html %}
 	</head>
-	{% if page.url == "/index.html" %}<body class="home">{% endif %}
-	{% if page.url == "/about.html" %}<body class="about page">{% endif %}
-	{% if page.url == "/services.html" %}<body class="page-services">{% endif %}
-	{% if page.url == "/blog.html" %}<body class="blog">{% endif %}
-	{% if page.url == "/contact.html" %}<body class="blog">{% endif %}
+	
+	<body class="{{ page.class }}">
 		<div class="wrap">
 			{% include header.html %} 
 			<!-- Content Start -->
