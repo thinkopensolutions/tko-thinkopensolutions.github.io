@@ -11,17 +11,21 @@
     <div id="client-carousel" class="client-carousel slide">
         <div class="carousel-inner">
             <div class="item active">
-				{% for client in site.clients limit: 4 %}
-					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 item animate_afc d1">
-		                <div class="item-inner"><a href="#"><img alt="Upportdash" src="{{ client: logo }}"></a></div>
-		            </div>
+            	{% for page in site.pages limit: 4 %}
+					{% if page.layout == 'client' %}
+						<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 item animate_afc d1">
+				            <div class="item-inner"><a href="{{ page.link }}"><img alt="{{ page.title }}" src="/img/clients/{{ page.logo }}"></a></div>
+				        </div>
+					{% endif %}
 				{% endfor %}
             </div>
             <div class="item">
-				{% for client in site.clients limit: 4 %}
-					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 item animate_afc d1">
-		                <div class="item-inner"><a href="#"><img alt="Upportdash" src="{{ client: logo }}"></a></div>
-		            </div>
+            	{% for page in site.pages limit: 4 %}
+					{% if page.layout == 'client' %}
+						<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 item animate_afc d1">
+				            <div class="item-inner"><a href="{{ page.link }}"><img alt="{{ page.title }}" src="/img/clients/{{ page.logo }}"></a></div>
+				        </div>
+					{% endif %}
 				{% endfor %}
             </div>
         </div>

@@ -17,93 +17,46 @@
                     <div id="portfolio-carousel" class="portfolio-carousel slide">
                         <div class="carousel-inner">
                             <div class="item active">
-                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 item animate_afc d2">
-                                    <div class="portfolio-item">
-                                        <a href="/img/portfolio/img-portfolio.jpg" class="portfolio-item-link" data-rel="prettyPhoto" >
-                                        <span class="portfolio-item-hover"></span>
-                                        <span class="fullscreen"><i class="icon-search"></i></span><img src="/img/portfolio/aapsa-portfolio.jpg" alt=" "/>
-                                        </a>
-                                        <div class="portfolio-item-title">
-                                            <a href="single-project.html">AAPSA</a>
-                                            <p>
-                                                SaaS :: CRM / Recursos Humanos
-                                            </p>
-                                        </div>
-                                        <div class="clearfix"></div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 item animate_afc d3">
-                                    <div class="portfolio-item">
-                                        <a href="/img/portfolio/img-portfolio.jpg" class="portfolio-item-link" data-rel="prettyPhoto" >
-                                        <span class="portfolio-item-hover"></span><span class="fullscreen"><i class="icon-search"></i></span><img src="/img/portfolio/h3-portfolio.jpg" alt=" "/>
-                                        </a>
-                                        <div class="portfolio-item-title">
-                                            <a href="single-project.html">H3 Hamburgueria</a>
-                                            <p>
-                                                SaaS :: Gestão Financeira / Estoques
-                                            </p>
-                                        </div>
-                                        <div class="clearfix"></div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 item animate_afc d4">
-                                    <div class="portfolio-item">
-                                        <a href="/img/portfolio/img-portfolio.jpg" class="portfolio-item-link" data-rel="prettyPhoto" >
-                                        <span class="portfolio-item-hover"></span><span class="fullscreen"><i class="icon-search"></i></span><img src="/img/portfolio/pvsinos-portfolio.jpg" alt=" "/>
-                                        </a>
-                                        <div class="portfolio-item-title">
-                                            <a href="single-project.html">Colégio PVSinos</a>
-                                            <p>
-                                                SaaS :: Colégio 360º / Cambridge
-                                            </p>
-                                        </div>
-                                        <div class="clearfix"></div>
-                                    </div>
-                                </div>
+								{% for page in site.pages %}
+									{% if page.layout == 'case1' %}
+				                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 item animate_afc {{ page.animate }}">
+				                            <div class="portfolio-item">
+				                                <a href="/img/cases/{{ page.thumbnail }}" class="portfolio-item-link" data-rel="prettyPhoto" >
+				                                <span class="portfolio-item-hover"></span>
+				                                <span class="fullscreen"><i class="icon-search"></i></span><img src="/img/cases/{{ page.logo }}" alt=" "/>
+				                                </a>
+				                                <div class="portfolio-item-title">
+				                                    <a href="single-project.html">{{ page.title }}</a>
+				                                    <p>
+				                                        {{ page.content }}
+				                                    </p>
+				                                </div>
+				                                <div class="clearfix"></div>
+				                            </div>
+				                        </div>
+									{% endif %}
+								{% endfor %}
                             </div>
                             <div class="item">
-                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 item">
-                                    <div class="portfolio-item">
-                                        <a href="/img/portfolio/img-portfolio.jpg" class="portfolio-item-link" data-rel="prettyPhoto" >
-                                        <span class="portfolio-item-hover"></span><span class="fullscreen"><i class="icon-search"></i></span><img src="/img/portfolio/primeschool-portfolio.jpg" alt=" "/>
-                                        </a>
-                                        <div class="portfolio-item-title">
-                                            <a href="single-project.html">Primeschool</a>
-                                            <p>
-                                                SaaS :: Colégio 360º / Cambridge
-                                            </p>
-                                        </div>
-                                        <div class="clearfix"></div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 item">
-                                    <div class="portfolio-item">
-                                        <a href="/img/portfolio/img-portfolio.jpg" class="portfolio-item-link" data-rel="prettyPhoto" >
-                                        <span class="portfolio-item-hover"></span><span class="fullscreen"><i class="icon-search"></i></span><img src="/img/portfolio/governoportugal-portfolio.jpg" alt=" "/>
-                                        </a>
-                                        <div class="portfolio-item-title">
-                                            <a href="single-project.html">Ministério Educação</a>
-                                            <p>
-                                                Fábrica OnSite :: ERP / RAD
-                                            </p>
-                                        </div>
-                                        <div class="clearfix"></div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 item">
-                                    <div class="portfolio-item">
-                                        <a href="/img/portfolio/img-portfolio.jpg" class="portfolio-item-link" data-rel="prettyPhoto" >
-                                        <span class="portfolio-item-hover"></span><span class="fullscreen"><i class="icon-search"></i></span><img src="/img/portfolio/btoc-portfolio.jpg" alt=" "/>
-                                        </a>
-                                        <div class="portfolio-item-title">
-                                            <a href="single-project.html">BTOC Contabilidade</a>
-                                            <p>
-                                                SaaS :: Auditoria
-                                            </p>
-                                        </div>
-                                        <div class="clearfix"></div>
-                                    </div>
-                                </div>
+								{% for page in site.pages %}
+									{% if page.layout == 'case2' %}
+				                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 item">
+				                            <div class="portfolio-item">
+				                                <a href="/img/cases/{{ page.thumbnail }}" class="portfolio-item-link" data-rel="prettyPhoto" >
+				                                <span class="portfolio-item-hover"></span>
+				                                <span class="fullscreen"><i class="icon-search"></i></span><img src="/img/cases/{{ page.logo }}" alt=" "/>
+				                                </a>
+				                                <div class="portfolio-item-title">
+				                                    <a href="single-project.html">{{ page.title }}</a>
+				                                    <p>
+				                                        {{ page.content }}
+				                                    </p>
+				                                </div>
+				                                <div class="clearfix"></div>
+				                            </div>
+				                        </div>
+									{% endif %}
+								{% endfor %}
                             </div>
                         </div>
                     </div>
