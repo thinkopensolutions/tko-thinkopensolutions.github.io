@@ -1,6 +1,6 @@
 
 {% assign t = site.tags.translations[0] %}
-
+ 
 <div class="latest-posts">
     <div class="container">
         <div class="row">
@@ -10,45 +10,30 @@
             <div class="clearfix"></div>
             <div class="blog-showcase col-lg-12 col-md-12 col-sm-12 col-xs-12 animate_afb d1">
                 <ul>
-                    <li class="">
-                        <div class="blog-showcase-thumb col-lg-4">
-                            <div class="post-body">
-                                <a class="post-item-link" href="/assets/img-portfolio.jpg" data-rel="prettyPhoto"><span class="post-item-hover"></span><span class="fullscreen"><i class="icon-search"></i></span><img alt="" src="/assets/img-portfolio.jpg"></a>
-                            </div>
-                        </div>
-                        <div class="blog-showcase-extra-info col-lg-4">
-                            <span><a href="#">Sep 11th, 2013</a></span>
-                            <h4><a href="#" class="title">Blog post title</a></h4>
-                            <p>Mauris sed mauris bibendum est imperdiet porttitor tincidunt at lorem. Proin augue massa</p>
-                            <a href="#">Read more <i class="icon-double-angle-right"></i></a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="blog-showcase-thumb col-lg-4">
-                            <div class="post-body">
-                                <a class="post-item-link" href="/assets/img-portfolio.jpg" data-rel="prettyPhoto"><span class="post-item-hover"></span><span class="fullscreen"><i class="icon-search"></i></span><img alt="" src="/assets/img-portfolio.jpg"></a>
-                            </div>
-                        </div>
-                        <div class="blog-showcase-extra-info col-lg-4">
-                            <span><a href="#">Sep 11th, 2013</a></span>
-                            <h4><a href="#" class="title">Blog post title</a></h4>
-                            <p>Mauris sed mauris bibendum est imperdiet porttitor tincidunt at lorem. Proin augue massa</p>
-                            <a href="#">Read more <i class="icon-double-angle-right"></i></a>
-                        </div>
-                    </li>
-                    <li class="blog-first-el">
-                        <div class="blog-showcase-thumb col-lg-4">
-                            <div class="post-body">
-                                <a class="post-item-link" href="/assets/img-portfolio.jpg" data-rel="prettyPhoto"><span class="post-item-hover"></span><span class="fullscreen"><i class="icon-search"></i></span><img alt="" src="/assets/img-portfolio.jpg"></a>
-                            </div>
-                        </div>
-                        <div class="blog-showcase-extra-info col-lg-4">
-                            <span><a href="#">Sep 11th, 2013</a></span>
-                            <h4><a href="#" class="title">Blog post title</a></h4>
-                            <p>Mauris sed mauris bibendum est imperdiet porttitor tincidunt at lorem. Proin augue massa</p>
-                            <a href="#">Read more <i class="icon-double-angle-right"></i></a>
-                        </div>
-                    </li>
+					{% for post in site.categories.blog limit:3 %}
+				
+						<li>
+							{% if post.image %}
+							<div class="blog-showcase-thumb col-lg-4">
+								<div class="post-body">
+									<a class="post-item-link" href="{{ post.image }}" data-rel="prettyPhoto">
+								</div>
+							</div>
+							{% endif %}
+							<div class="blog-showcase-extra-info col-lg-4">
+								{% capture day %}{{post.date | date: "%d"}}{% endcapture %}
+								{% capture month %}{{post.date | date: "%B"}}{% endcapture %}
+								{% capture year %}{{post.date | date: "%Y"}}{% endcapture %}          
+								
+								<span><a href="#">{{ day }} {{ t.[page.lang].blog.abbr.[month] }} {{ year }}</a></span>
+								<h4><a href="#" class="title">{{ post.title }}</a></h4>
+								<p>{{ post.content | strip_html | truncatewords:85}}</p>
+								<a href="{{ post.url }}">Leia mais <i class="icon-double-angle-right"></i></a>
+							</div>
+						</li>
+					
+					{% endfor %} 
+					
                 </ul>
                 <div class="clearfix"></div>
             </div>

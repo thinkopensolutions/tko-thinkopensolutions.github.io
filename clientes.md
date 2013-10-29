@@ -4,4 +4,4 @@ layout: home_page
 class: about page
 ---
 
-{% include clients.html %}
+{% include latest_posts.html %}
