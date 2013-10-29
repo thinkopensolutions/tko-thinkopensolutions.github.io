@@ -749,12 +749,15 @@ footer section {
   }
 }
 
-
 @media only screen and (max-width: 620px) {
   .no-csstransforms li{
     width:4em;
     height:4em;
     line-height:4em;
+  }
+  
+  div.hide-not-screen {
+  	display: none;
   }
 }
 @media only screen and (max-width: 500px) {
