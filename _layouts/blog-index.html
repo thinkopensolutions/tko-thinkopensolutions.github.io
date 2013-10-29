@@ -62,7 +62,8 @@ class: blog blog-small
 					<div class="blog-divider"></div>
 					
 			{% endfor %}
-		 
+			
+			{% comment %}
 			<div class="pagination-centered">
 			   <ul class="pagination">
 				  <li class="disabled"><a href="#">«</a></li>
@@ -74,8 +75,12 @@ class: blog blog-small
 				  <li><a href="#">»</a></li>
 			   </ul>
 			</div>
+			
+			{% endcomment %}
 		 </div>
 		 <div class="sidebar col-lg-3 col-md-3 col-sm-4 col-xs-12">
+		 
+			{% comment %}
 			<!-- Search Widget Start -->
 			<div class="widget search-form">
 			   <div class="input-group">
@@ -142,6 +147,9 @@ class: blog blog-small
 			   </div>
 			</div>
 			<!-- Tab End -->
+			
+			{% endcomment %}
+			
 			<!-- Testimonials Widget Start -->
 			<div class="row">
 			   <div class="testimonials widget">
@@ -208,6 +216,9 @@ class: blog blog-small
 				  </div>
 			   </div>
 			</div>
+			
+			{% comment %}
+			
 			<!-- Category Widget Start -->
 			<div class="widget category">
 			   <h3 class="title">Categories</h3>
@@ -241,6 +252,8 @@ class: blog blog-small
 			   </div>
 			</div>
 			<!-- Ads Widget End -->
+			
+			{% endcomment %}
 		 </div>
 		 <!-- Sidebar End -->     
 	  </div>

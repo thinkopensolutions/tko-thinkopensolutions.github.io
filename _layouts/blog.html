@@ -45,27 +45,14 @@ lang: pt-br
 			   <div class="post-content">
 				  {{content}}
 			   </div>
-			</article>
+			</article>			
 			<div class="blog-divider"></div>
+			{% comment %}			
 			<ul class="pager">
 			   <li class="previous"><a href="#">&larr; Older</a></li>
 			   <li class="next"><a href="#">Newer &rarr;</a></li>
 			</ul>
-			<!-- Start About Author  --!>
-			<div class="about-author">
-			   <h3 class="title">About The Author</h3>
-			   <div class="author-content">
-				  <div class="avatar"><img alt="" src="/img/fifo-small.jpg"></div>
-				  <div class="data">
-					 <h4><a href="#">FIFO Themes</a></h4>
-					 <p>
-						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
-					 </p>
-				  </div>
-				  <!-- End data --!>
-			   </div>
-			</div>
-			<!-- End About Author --> 
+			{% endcomment %}
 			<div class="divider"></div>
 			{% if page.comments %}
 			<!-- Comments Section Start -->
@@ -82,6 +69,7 @@ lang: pt-br
 			{% endif %}
 		 </div>
 		 <div class="sidebar col-lg-3 col-md-3 col-sm-4 col-xs-12">
+			{% comment %}
 			<!-- Search Widget Start -->
 			<div class="widget search-form">
 			   <div class="input-group">
@@ -148,6 +136,7 @@ lang: pt-br
 			   </div>
 			</div>
 			<!-- Tab End -->
+			{% endcomment %}
 			<!-- Testimonials Widget Start -->
 			<div class="row">
 			   <div class="testimonials widget">
