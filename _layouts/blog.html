@@ -1,6 +1,8 @@
 ---
 layout: page
-class: blog blog-small
+class: blog single-post
+comments: yes
+lang: pt-br
 ---
 
 {% assign t = site.tags.translations[0] %}
@@ -9,74 +11,75 @@ class: blog blog-small
 <div class="content">
    <div class="container">
 	  <div class="row">
-		 <div class="posts-block col-lg-9 col-md-9 col-sm-8 col-xs-12">
-			{% for post in site.posts limit 5 %}
-				{% if post.categories contains 'blog' %}
-				
-					<article class="post hentry">
-					{% if post.image %}
-					   <div class="post-image">
-						  <a href="{{ post.image }}" data-rel="prettyPhoto">
-						  <span class="img-hover"></span>
-						  <span class="fullscreen"><i class="icon-search"></i></span>
-						  <img src="{{ post.image }}" alt="">
-						  </a>
-					   </div>
-					{% else if %}
-					   <div class="post-image">
-						  <a href="/img/blog/blog-post1.jpg" data-rel="prettyPhoto">
-						  <span class="img-hover"></span>
-						  <span class="fullscreen"><i class="icon-search"></i></span>
-						  <img src="/img/blog/blog-post1.jpg" alt="">
-						  </a>
-					   </div>
-					{% endif %}
-					   <div class="post-content-wrap">
-						  <header class="post-header">
-							 <div class="post-date">
-								{% capture day %}{{post.date | date: "%d"}}{% endcapture %}
-								{% capture month %}{{post.date | date: "%B"}}{% endcapture %}
-								{% capture year %}{{post.date | date: "%Y"}}{% endcapture %}           						
-								<a class="date" href="#"><strong>{{ day }}</strong><i>{{ t.[page.lang].blog.abbr.[month] }}</i></a>
-							 </div>
-							 <h3 class="content-title">{{ post.title }}</h3>
-							 <div class="blog-entry-meta">
-								{% if post.author %}
-								 <div class="blog-entry-meta-author">
-									<i class="icon-user"></i>
-									<a href="#" class="blog-entry-meta-author">{{post.author}}</a>
-								 </div>
-								{% endif %}		
-							 </div>
-						  </header>
-						  <div class="post-content">
-							 <p>
-								{{ post.content | strip_html | truncatewords:40}}
-							 </p>
-						  </div>
-						  <footer class="post-footer">
-							<a class="btn-small btn-color" href="{{ post.url }}">Leia mais...</a>
-						  </footer>
-					   </div>				   
-					   <div class="clearfix"></div>
-					</article>
-		
-					<div class="blog-divider"></div>
-					
-				{% endif %}
-			{% endfor %}
-		 
-			<div class="pagination-centered">
-			   <ul class="pagination">
-				  <li class="disabled"><a href="#">«</a></li>
-				  <li class="active"><a href="#">1</a></li>
-				  <li><a href="#">2</a></li>
-				  <li><a href="#">3</a></li>
-				  <li><a href="#">4</a></li>
-				  <li><a href="#">5</a></li>
-				  <li><a href="#">»</a></li>
-			   </ul>
+		 <div class="posts-block col-lg-9 col-md-9 col-sm-8 col-xs-12 bottom-pad">
+			<article class="post hentry">
+			{% if page.image %}
+			   <div class="post-image">
+				  <a href="{{ page.image }}" data-rel="prettyPhoto">
+				  <span class="img-hover"></span>
+				  <span class="fullscreen"><i class="icon-search"></i></span>
+				  <img src="{{ page.image }}" alt="">
+				  </a>
+			   </div>
+			{% endif %}
+			   <header class="post-header">
+				  <h3 class="content-title">{{page.title}}</h3>
+				  <div class="blog-entry-meta">
+					 <div class="blog-entry-meta-date">
+						<i class="icon-time"></i>
+						{% capture day %}{{page.date | date: "%d"}}{% endcapture %}
+						{% capture month %}{{page.date | date: "%B"}}{% endcapture %}
+						{% capture year %}{{page.date | date: "%Y"}}{% endcapture %}             	
+						<span class="blog-entry-meta-date-day">{{day}} de </span>
+						<span class="blog-entry-meta-date-month">{{t.[page.lang].blog.[month]}}</span>					
+						<span class="blog-entry-meta-date-year">{{year}}</span>
+					 </div>		
+      				{% if page.author %}
+					 <div class="blog-entry-meta-author">
+						<i class="icon-user"></i>
+						<a href="#" class="blog-entry-meta-author">{{page.author}}</a>
+					 </div>
+					{% endif %}					 
+				  </div>
+			   </header>
+			   <div class="post-content">
+				  {{content}}
+			   </div>
+			</article>
+			<div class="blog-divider"></div>
+			<ul class="pager">
+			   <li class="previous"><a href="#">&larr; Older</a></li>
+			   <li class="next"><a href="#">Newer &rarr;</a></li>
+			</ul>
+			<!-- Start About Author  --!>
+			<div class="about-author">
+			   <h3 class="title">About The Author</h3>
+			   <div class="author-content">
+				  <div class="avatar"><img alt="" src="img/fifo-small.jpg"></div>
+				  <div class="data">
+					 <h4><a href="#">FIFO Themes</a></h4>
+					 <p>
+						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
+					 </p>
+				  </div>
+				  <!-- End data --!>
+			   </div>
 			</div>
+			<!-- End About Author --> 
+			<div class="divider"></div>
+			{% if page.comments %}
+			<!-- Comments Section Start -->
+			<div class="comment-wrapper">
+			   <h3 class="title">Coment&aacute;rios</h3>
+			   <div class="clearfix"></div>
+			   <div class="comments-sec">
+			    <div class="fb-comments" data-href="{{ " {{="" site.url="" "="" }}}}{{="" "{{="" page.url="" }}}}"="" data-num-posts="4" data-width="706"></div>
+			   </div>
+			   <div class="clearfix">
+			   </div>
+			</div>
+			<!-- Comments Section End -->
+			{% endif %}
 		 </div>
 		 <div class="sidebar col-lg-3 col-md-3 col-sm-4 col-xs-12">
 			<!-- Search Widget Start -->
@@ -245,7 +248,7 @@ class: blog blog-small
 			</div>
 			<!-- Ads Widget End -->
 		 </div>
-		 <!-- Sidebar End -->     
+		 <!-- Sidebar End --> 
 	  </div>
    </div>
 </div>
