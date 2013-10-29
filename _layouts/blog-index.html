@@ -10,9 +10,7 @@ class: blog blog-small
    <div class="container">
 	  <div class="row">
 		 <div class="posts-block col-lg-9 col-md-9 col-sm-8 col-xs-12">
-			{% for post in site.posts limit 5 %}
-				{% if post.categories contains 'blog' %}
-				
+			{% for post in site.categories.blog limit 5 %}				
 					<article class="post hentry">
 					{% if post.image %}
 					   <div class="post-image">
@@ -63,7 +61,6 @@ class: blog blog-small
 		
 					<div class="blog-divider"></div>
 					
-				{% endif %}
 			{% endfor %}
 		 
 			<div class="pagination-centered">
