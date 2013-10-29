@@ -2,7 +2,7 @@
 title: Clientes
 layout: home_page
 class: about page
-lang: ptbr
+lang: pt-br
 ---
 
 {% include latest_posts.html %}

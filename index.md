@@ -1,7 +1,7 @@
 ---
 title: Home
 layout: home_page
-lang: ptbr
+lang: pt-br
 ---
 
 {% comment %}{% endcomment %}
