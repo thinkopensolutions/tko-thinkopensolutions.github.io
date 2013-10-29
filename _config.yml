@@ -60,7 +60,7 @@ jekyll_sort:
 
 # Prose settings
 prose:
-  media: 'assets'
+  media: 'img'
   rooturl: "_posts"
   siteurl: "http://www.thinkopensolutions.com.br"
   relativeLinks: "http://www.thinkopensolutions.com.br/resources/prose/relativeLinks.jsonp"
