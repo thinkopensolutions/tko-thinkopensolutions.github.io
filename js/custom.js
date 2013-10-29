@@ -625,17 +625,15 @@ jQuery(document).ready(function () {
 		
 	//Google map
 	jQuery('#maps').gMap({
-		address: "Khulna Division, Bangladesh",
-		zoom: 10,
+		address: "Av. Paulista, 1636 - Bela Vista, São Paulo - SP",
+		zoom: 15,
 		markers: [{
-			latitude: 22.816694,
-			longitude: 89.549904,
-			html: "<h4>FIFO Themes</h4>Wordpress, HTML5/CSS Themes",
+			latitude: -23.560938,
+			longitude: -46.65671,
+			html: "<h4>Thinkopen Solutions Brasil</h4>Tel: +55 (11) 3522-8125<br />Email: <a href='mailto:comercial@thinkopensolutions.com.br'>comercial@thinkopensolutions.com.br</a><br />ERP/OpenERP/Fábrica Serviços/Linux",
 			popup: true
 		}]
 	});
-
-
 
 	/*----------------------------------------------------*/
 	/*	Contact Form Section
@@ -654,7 +652,7 @@ $("#contact").submit(function (e) {
         return pattern.test(emailAddress);
     };
 
-    if (isValidEmail(email) && (text.length > 100) && (name.length > 1)) {
+    if (isValidEmail(email) && (text.length > 200) && (name.length > 1)) {
         $.ajax({
             type: "POST",
             url: "ajax/process.php",

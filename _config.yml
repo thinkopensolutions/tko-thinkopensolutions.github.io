@@ -1,7 +1,7 @@
 # Sitewide configuration settings. Set `title` to the site title, which
 # will be appended to the URL following {{page.title}} |
 
-title: Think Open Solutions Brasil
+title: ThinkOpen Solutions Brasil
 url: http://localhost:4000
 baseurl: 
 permalink: /:categories/:title

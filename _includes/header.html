@@ -5,16 +5,12 @@
         <div class="slidedown collapse">
             <div class="container">
                 <div class="phone-email pull-left">
-                    <a><i class="icon-phone"></i> Fale Conosco : +55 (11) 3522-8125</a>
-                    <a href="mail@example.com"><i class="icon-envelope"></i> Email : comercial@thinkopensolutions.com.br</a>
+                    <a><i class="icon-phone"></i> Fale Conosco : {% include phone.html %}</a>
+                    <a href="mailto:{% include email.html %}"><i class="icon-envelope"></i> Email : {% include email.html %}</a>
                 </div>
                 <div class="pull-right">
                     <ul class="social pull-left">
-                        <li class="facebook"><a href="#"><i class="icon-facebook"></i></a></li>
-                        <li class="twitter"><a href="#"><i class="icon-twitter"></i></a></li>
-                        <li class="dribbble"><a href="#"><i class="icon-dribbble"></i></a></li>
-                        <li class="linkedin"><a href="#"><i class="icon-linkedin"></i></a></li>
-                        <li class="rss"><a href="#"><i class="icon-rss"></i></a></li>
+                    	{% include social.html %}
                     </ul>
                     <div id="search-form" class="pull-right">
                         <form action="#" method="get">
