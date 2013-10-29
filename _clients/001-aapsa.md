@@ -1,5 +1,6 @@
 ---
-title: aapsa
-layout: default
-logo: img/clientslogo/logo-1.jpg
+title: AAPSA
+layout: client
+logo: logo-aapsa.jpg
+link: http://www.aapsa.com.br
 ---
