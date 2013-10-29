@@ -17,14 +17,11 @@
                     <div id="portfolio-carousel" class="portfolio-carousel slide">
                         <div class="carousel-inner">
                             <div class="item active">
-								{% for page in site.pages %}
-									{% if page.layout == 'case1' %}
+								{% for page in site.pages limit:2 %}
+									{% if page.layout == 'case' %}
 				                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 item animate_afc {{ page.animate }}">
 				                            <div class="portfolio-item">
-				                                <a href="/img/cases/{{ page.thumbnail }}" class="portfolio-item-link" data-rel="prettyPhoto" >
-				                                <span class="portfolio-item-hover"></span>
-				                                <span class="fullscreen"><i class="icon-search"></i></span><img src="/img/cases/{{ page.logo }}" alt=" "/>
-				                                </a>
+				                                <img src="/img/cases/{{ page.logo }}" alt=" "/>
 				                                <div class="portfolio-item-title">
 				                                    <a href="single-project.html">{{ page.title }}</a>
 				                                    <p>
@@ -38,8 +35,8 @@
 								{% endfor %}
                             </div>
                             <div class="item">
-								{% for page in site.pages %}
-									{% if page.layout == 'case2' %}
+								{% for page in site.pages offset:2 %}
+									{% if page.layout == 'case' %}
 				                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 item">
 				                            <div class="portfolio-item">
 				                                <a href="/img/cases/{{ page.thumbnail }}" class="portfolio-item-link" data-rel="prettyPhoto" >

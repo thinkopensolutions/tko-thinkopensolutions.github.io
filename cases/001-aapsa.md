@@ -1,6 +1,6 @@
 ---
 title: AAPSA
-layout: case1
+layout: case
 logo: logo-aapsa.jpg
 link: http://www.aapsa.com.br
 thumbnail: logo-aapsa.jpg
