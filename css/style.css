@@ -476,7 +476,7 @@ h2.title {
 /* Main Content */
 #main {
     background-color: #fff;
-	padding: 0 0 60px;
+	padding: 0 0 0px;
 }
 
 .home #main, .home-2 #main, .home-3 #main, .page-services #main, .about #main {

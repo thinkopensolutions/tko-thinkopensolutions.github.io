@@ -11,16 +11,16 @@
     <div id="client-carousel" class="client-carousel slide">
         <div class="carousel-inner">
             <div class="item active">
-				{% for post in site.clients limit: 4 %}
+				{% for client in site.clients limit: 4 %}
 					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 item animate_afc d1">
-		                <div class="item-inner"><a href="#"><img alt="Upportdash" src="{{ post: logo }}"></a></div>
+		                <div class="item-inner"><a href="#"><img alt="Upportdash" src="{{ client: logo }}"></a></div>
 		            </div>
 				{% endfor %}
             </div>
             <div class="item">
-				{% for post in site.clients limit: 4 %}
+				{% for client in site.clients limit: 4 %}
 					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 item animate_afc d1">
-		                <div class="item-inner"><a href="#"><img alt="Upportdash" src="{{ post: logo }}"></a></div>
+		                <div class="item-inner"><a href="#"><img alt="Upportdash" src="{{ client: logo }}"></a></div>
 		            </div>
 				{% endfor %}
             </div>
