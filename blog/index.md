@@ -1,7 +1,6 @@
 ---
+published: true
+layout: blog-index
 title: Blog
-layout: page
-class: blog
+lang: pt-br
 ---
-
-{% include blog.html %}
