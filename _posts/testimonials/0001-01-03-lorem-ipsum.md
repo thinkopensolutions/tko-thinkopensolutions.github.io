@@ -1,4 +1,4 @@
-﻿---
+---
 categories: testimonial
 name: Author Name 03
 image: /assets/team-member.jpg

@@ -1,5 +1,4 @@
----
-title: 
+--- 
 layout: home_page
 lang: pt-br
 ---
