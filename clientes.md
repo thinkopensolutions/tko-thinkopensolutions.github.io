@@ -5,4 +5,4 @@ class: about page
 lang: pt-br
 ---
 
-{% include latest_posts.html %}
+{% include testimonials.html %}
