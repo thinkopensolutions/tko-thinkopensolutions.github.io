@@ -1,5 +1,5 @@
 <meta charset="utf-8">
-<title>{% if page.meta-title %}{{page.meta-title}}{% else %}{{page.title}}{% endif %} &#8211; {{site.title}}</title>
+<title>{% if page.meta-title %}{{page.meta-title}} &#8211; {% else %}{{page.title}} &#8211; {% endif %}{{site.title}}</title>
 <meta name='description' content="{% if page.meta-description %}{{page.meta-description | replace:'"','\"'}}{% else %}{{page.bite | replace:'"','\"'}}{% endif %}" />
 <meta name="author" content="thinkopensolutions.com.br">
 <!-- Mobile Metas -->
