@@ -787,7 +787,7 @@ footer section {
 
 @media only screen and (min-width:421px){
   div.multi-screens {
-    background-color: rgba(255,255,255,0.9);
+    background-color: rgba(255,255,255,0.8);
     height: 19.57em;
     width: 27.14em;
     border-radius: 0.36em;
@@ -795,7 +795,7 @@ footer section {
 }
 @media only screen and (max-width:420px){
   div.multi-screens {
-    background-color: rgba(255,255,255,0.9);
+    background-color: rgba(255,255,255,0.8);
     height: 26.00em;
     width: 38.50em;
     border-radius: 0.36em;
