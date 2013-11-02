@@ -1,0 +1,61 @@
+<div class="content">
+    <div class="container">
+        <div class="row">
+            <div class="posts-block col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <article>
+                    <h3 class="title">Veja os Testemunhos de Nossos Clientes</h3>
+                    <div class="post-content">
+                        <p>
+                        A opinião e retorno dos nossos representantes e clientes é muito importante para nós, pois permite-nos identificar e entender o que corre menos bem, por forma a podermos corrigir e melhorar continuamente os nossos processos e relações com todos eles.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </div>
+		<div class="divider"></div>
+		{% assign counter = 0 %}
+		{% assign callus = 0 %}
+		{% for post in site.categories.testimonial %}
+		{% assign counter=counter | plus:1 %}
+		{% assign callus=callus | plus:1 %}
+		{% if counter == 1 %}
+        <div class="row">
+        {% endif %}
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <div class="testimonial item">
+						<p>{{ post.content }}</p>
+						{% if post.name == null %}
+						{% else %}
+							<div class="testimonials-arrow"></div>
+							<div class="author">
+								{% if post.image == null %}
+									<div class="testimonial-image"><img alt="" src="/assets/team-member.jpg"></div>
+								{% else %}
+									<div class="testimonial-image"><img alt="" src="{{ post.image }}"></div>
+								{% endif %}
+								<div class="testimonial-author-info">
+									<a href="#"><span class="color">{{ post.name }}</span></a> {{ post.company }}
+								</div>
+							</div>
+						 {% endif %}
+				</div>
+			</div>
+		{% if counter == 2 %}
+		</div>
+		<div class="divider"></div>
+		{% assign counter = 0 %}
+		{% endif %}
+		{% if callus == 4 %}
+	</div>
+</div>
+{% include contact-us.html %}
+<div class="content">
+    <div class="container">
+		{% endif %}
+		{% endfor %}
+		{% if counter == 1 %}
+		</div>
+		{% endif %}
+    </div>
+</div>
+<div class="divider"></div>
