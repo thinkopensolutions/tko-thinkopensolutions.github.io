@@ -2510,3 +2510,13 @@ footer a,.contact-box:hover,#options li a.selected,header .top-bar,header .top-b
 .panel-group .panel,.accordionMod .accordion-group {
     margin-bottom: 15px;
 }
+
+.team-member-image img {
+	opacity:0.4;
+	filter:alpha(opacity=40); /* For IE8 and earlier */	
+}
+
+.team-member-image img:hover {
+	opacity:1.0;
+	filter:alpha(opacity=100); /* For IE8 and earlier */	
+}
