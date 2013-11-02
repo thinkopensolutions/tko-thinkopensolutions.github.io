@@ -2,7 +2,7 @@
 published: true
 categories: testimonial
 name: Antonio Vila
-image: /assets/team-member.jpg
+image: /assets/team-member-antoniovila.jpg
 company: PrimeSchool
 ---
 
