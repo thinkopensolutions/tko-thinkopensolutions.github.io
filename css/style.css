@@ -596,7 +596,7 @@ h2.title {
 }
 
 .post-date a.date strong {
-    color: #1889C1;
+    color: #6c3583;
     display: block;
     font-size: 27px;
     font-weight: normal;
@@ -604,7 +604,7 @@ h2.title {
 }
 
 .post-date a.date i {
-    background-color: #1889C1;
+    background-color: #6c3583;
     border-top: 1px solid #F3F3F3;
     color: #FFFFFF;
     display: block;
