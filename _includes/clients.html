@@ -15,7 +15,7 @@
             	{% for page in site.categories.clients limit:4 %}
 					{% assign counter=counter | plus:1 %}
 					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 item animate_afc d{{ counter }}">
-						<div class="item-inner"><a href="{{ page.content }}"><img alt="{{ page.title }}" src="{{ page.logo }}"></a></div>
+						<div class="item-inner"><a href="{{ page.link }}"><img alt="{{ page.title }}" src="{{ page.logo }}"></a></div>
 					</div>
 				{% endfor %}
             </div>
@@ -24,7 +24,7 @@
             	{% for page in site.categories.clients offset:4 limit:4 %}
 					{% assign counter=counter | plus:1 %}
 					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 item animate_afc d{{ counter }}">
-						<div class="item-inner"><a href="{{ page.content }}"><img alt="{{ page.title }}" src="{{ page.logo }}"></a></div>
+						<div class="item-inner"><a href="{{ page.link }}"><img alt="{{ page.title }}" src="{{ page.logo }}"></a></div>
 					</div>
 				{% endfor %}
             </div>
