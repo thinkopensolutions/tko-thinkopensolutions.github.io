@@ -1,9 +1,8 @@
 ---
 categories: testimonial
-name: Author Name 05
+name: Alexandre Guimarães
 image: /assets/team-member.jpg
-company: Company Name 05
+company: BTOC
 ---
 
-
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.
+"Pudemos reduzir as despesas operacionais em 15% a 20%, sem incluir a depreciação de custos para construir o aplicativo."
