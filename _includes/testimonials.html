@@ -14,7 +14,7 @@
 				<div class="item active">
 					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 						<div class="testimonial item">
-							<p>{{ post.content }}</p>
+							<a href="/testemunhos"><p>{{ post.content }}</p></a>
 							 
 							{% if post.name == null %}
 							{% else %}
@@ -22,13 +22,13 @@
 								<div class="testimonials-arrow"></div>
 								<div class="author">
 									{% if post.image == null %}
-										<div class="testimonial-image"><img alt="" src="/assets/team-member.jpg"></div>
+										<div class="testimonial-image"><a href="/testemunhos"><img alt="" src="/assets/team-member.jpg"></a></div>
 									{% else %}
-										<div class="testimonial-image"><img alt="" src="{{ post.image }}"></div>
+										<div class="testimonial-image"><a href="/testemunhos"><img alt="" src="{{ post.image }}"></a></div>
 									{% endif %}
 
 									<div class="testimonial-author-info">
-										<a href="#"><span class="color">{{ post.name }}</span></a> {{ post.company }}
+										<a href="/testemunhos"><span class="color">{{ post.name }}</span></a> {{ post.company }}
 									</div>
 								</div>
 							 
