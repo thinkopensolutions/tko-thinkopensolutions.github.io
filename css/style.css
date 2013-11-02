@@ -109,7 +109,7 @@ a:hover,a:focus {
     z-index: 9999;
     width: 100%;
     position: relative;
-	background:#4c1563;
+	background: #323B44; /* older color  #4c1563; */
     -webkit-box-shadow: 0 3px 3px -3px rgba(0,0,0,0.2);
     box-shadow: 0 3px 3px -3px rgba(0,0,0,0.2);
 }
@@ -1339,7 +1339,7 @@ a.prev,a.next {
     height: 25px;
     display: block;
     cursor: pointer;
-    background: #323B44;
+    background: #6c3583;
     color: #fafafa;
     font-size: 20px;
     text-align: center;
@@ -1353,7 +1353,7 @@ a.next {
 a.prev.disabled,a.next.disabled {
     display: block;
     cursor: default;
-    background: #323B44;
+    background: #6c3583;
     color: #fafafa;
     font-size: 20px;
     text-align: center;
@@ -1457,7 +1457,7 @@ span.color {
 
 /* Footer */
 .footer-top {
-    background: #4c1563;
+    background: url(/img/footer-bg.png);
 	border-bottom: 1px solid #414f5a;
     color: #A1A1A1;
     padding: 50px 0;
@@ -1514,7 +1514,7 @@ span.color {
     text-align: center;
     color: #fafafa;
     font-size: 28px;
-    background: #9e9e9e;
+    background: #6c3583;
     z-index: 9999;
 }
 
@@ -1555,7 +1555,6 @@ a.scrollup:hover i,a.scrollup:focus i {
 
 .contact-us {
     margin: 15px 0 0;
-    background: url("../img/contact-map.png") no-repeat center bottom;
 }
 
 footer .contact-us a {
