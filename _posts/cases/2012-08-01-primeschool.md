@@ -1,9 +1,9 @@
 ---
+published: true
+categories: cases
 title: Primeschool
 layout: case
-categories: cases
 logo: /assets/logo-primeschool.jpg
-published: true
 ---
 
 [Primeschool](http://www.primeschool.pt)

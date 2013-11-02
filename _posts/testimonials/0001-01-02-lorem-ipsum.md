@@ -1,4 +1,5 @@
 ---
+published: false
 categories: testimonial
 name: Author Name 02
 image: /assets/team-member.jpg
