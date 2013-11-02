@@ -58,6 +58,19 @@ jekyll_sort:
     include_categories:
     - glossary
 
+#Jekyll Asset Bundler
+asset_bundler:
+  compress:
+    js: yui
+    css: yui
+  base_path: /bundles/
+  server_url:
+  remove_bundled: false
+  dev: true
+  markup_templates:
+    js: "<script type='text/javascript' src='{{url}}'></script>\n"
+    css: "<link rel='stylesheet' type='text/css' href='{{url}}' />\n"
+
 # Prose settings
 prose:
   media: 'img'
