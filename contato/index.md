@@ -1,6 +1,6 @@
 ---
 title: Contatos
-layout: page
+layout: landing-page
 class: blog
 ---
 
