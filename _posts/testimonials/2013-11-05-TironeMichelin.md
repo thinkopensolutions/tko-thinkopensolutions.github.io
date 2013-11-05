@@ -1,7 +1,7 @@
 ---
 published: true
 categories: testimonial
-name: Tirone Michelin
+name: Dr. Tirone Michelin
 image: /assets/team-member-tironemichelin.jpg
 company: UHY Moreira Auditores e CBC
 ---
