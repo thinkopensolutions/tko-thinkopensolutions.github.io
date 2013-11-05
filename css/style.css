@@ -1162,27 +1162,33 @@ ul.graph-container {
 }
 
 .recentworks {
-    background: #fafafa;
+    background: #fff;
     border-top: 1px solid #DDD;
     border-bottom: 1px solid #DDD;
     padding: 60px 0;
     -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
 	
-	/* Safari 4-5,Chrome 1-9 */ 
+	/*
+	/* Safari 4-5,Chrome 1-9 * /
 	background:-webkit-gradient(linear,0% 0%,0% 100%,from(#f8f8f8),to(#fafafa));
 	
-	/* Safari 5.1,Chrome 10+*/ 
+	/* Safari 5.1,Chrome 10+ * /
 	background:-webkit-linear-gradient(top,#f8f8f8,#fafafa);
 	
-	/* Firefox 3.6+*/ 
+	/* Firefox 3.6+ * /
 	background:-moz-linear-gradient(top,#f8f8f8,#fafafa);
 	
-	/* IE 10 */ 
+	/* IE 10 * /
 	background:-ms-linear-gradient(top,#f8f8f8,#fafafa);
 	
-	/* Opera 11.10+*/ 
+	/* Opera 11.10+ * /
 	background:-o-linear-gradient(top,#f8f8f8,#fafafa);
+	*/
+}
+
+.recentworks .content-box-info {
+	padding-left: 0 !important;
 }
 
 
@@ -2214,11 +2220,15 @@ a.portfolio-item-link {
     color: #FFFFFF;
     float: left;
     font-size: 28px;
-    left: 35%;
+    left: 32%;
     line-height: 80px;
     position: relative;
     z-index: 5;
 	text-shadow:0 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.ch-info-wrap i.icon-question {
+    left: 40%;
 }
 
 .ch-info-wrap {

@@ -3,10 +3,17 @@ layout: home_page
 lang: pt-br
 ---
 
-{% comment %}{% endcomment %}
 {% include slider.html %}
 {% include slogan.html %}
 {% include why_how_what.html %}
+
+<div class="recentworks">
+{% include services-three.html %}
+</div>
+
+{% comment %}
 {% include recent_works.html %}
-{% include latest_posts.html %}
+{% endcomment %}
+
 {% include our_clients.html %}
+{% include latest_posts.html %}
