@@ -20,6 +20,7 @@ languages: &languages
   #- name: 'Espa&ntilde;ol'
   #  value: 'es'
 siteurl: 'http://www.thinkopensolutions.com.br'
+email: 'comercial@tkobr.com'
 searchurl: 'http://search.thinkopensolutions.com.br'
 searchproxy: 'http://www.thinkopensolutions.com.br'
    
