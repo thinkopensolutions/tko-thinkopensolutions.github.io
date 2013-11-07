@@ -1,7 +1,7 @@
 ---
 published: true
 categories: testimonial
-name: Antonio Vila
+name: Prof. Antonio Vila
 image: /assets/team-member-antoniovila.jpg
 company: PrimeSchool
 ---
