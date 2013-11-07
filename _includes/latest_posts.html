@@ -27,7 +27,7 @@
 								
 								<span><a href="{{ post.url }}">{{ day }} {{ t.[page.lang].blog.abbr.[month] }} {{ year }}</a></span>
 								<h4><a href="{{ post.url }}" class="title">{{ post.title }}</a></h4>
-								<p>{{ post.content | strip_html | truncatewords:85}}</p>
+								<p>{{ post.content | strip_html | truncatewords:20}}</p>
 								<a href="{{ post.url }}">Leia mais <i class="icon-double-angle-right"></i></a>
 							</div>
 						</li>
