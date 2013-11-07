@@ -630,7 +630,7 @@ jQuery(document).ready(function () {
 		markers: [{
 			latitude: -23.560938,
 			longitude: -46.65671,
-			html: "<h4>Thinkopen Solutions Brasil</h4>Tel: +55 (11) 3522-8125<br />Email: <a href='mailto:comercial@thinkopensolutions.com.br'>comercial@thinkopensolutions.com.br</a><br />ERP/OpenERP/Fábrica Serviços/Linux",
+			html: "<h4>Thinkopen Solutions Brasil</h4>Tel: +55 (11) 3522-8125<br />Email: <a href='mailto:comercial@tkobr.com'>comercial@tkobr.com</a><br />ERP/OpenERP/Fábrica Serviços/Linux",
 			popup: true
 		}]
 	});
