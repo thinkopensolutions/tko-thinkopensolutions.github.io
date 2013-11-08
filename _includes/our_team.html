@@ -1,139 +1,84 @@
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
     <h3 class="title">Nossa Equipe</h3>
-    <div class="row team">
-        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 item animate_afc d1">
-            <div class="team-member">
-                <div class="team-member-holder">
-                    <div class="team-member-image">
-                        <img alt="" src="/assets/foto-ceo.jpg">
-                        <!--
-                        <div class="team-member-links">
-                            <div class="team-member-links-list">
-                                <a target="_blank" class="facebook team-member-links-item" href="#"><i class="icon-facebook"></i></a>
-                                <a target="_blank" class="twitter team-member-links-item" href="#"><i class="icon-twitter"></i></a>
-                                <a target="_blank" class="linkedin team-member-links-item" href="#"><i class="icon-linkedin"></i></a>
+    
+    {% assign itemsByRow=4 %}
+    {% assign items=0 %}
+    
+    <div class="row">
+        {% for member in site.categories.team-member offset:0 limit:4 %}
+            {% assign items=items | plus:1 %}
+            
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 item animate_afc d{{ items }}">
+                <div class="team-member">
+                    <div class="team-member-holder">
+                        <div class="team-member-image">
+                            {% if member.image == null %}
+                                <img alt="" src="/assets/team-member.jpg">
+                            {% else %}
+                                <img alt="" src="{{ member.image }}">
+                            {% endif %}
+                                                    
+                            {% comment %}
+                            <div class="team-member-links">
+                                <div class="team-member-links-list">
+                                    <a target="_blank" class="facebook team-member-links-item" href="#"><i class="icon-facebook"></i></a>
+                                    <a target="_blank" class="twitter team-member-links-item" href="#"><i class="icon-twitter"></i></a>
+                                    <a target="_blank" class="linkedin team-member-links-item" href="#"><i class="icon-linkedin"></i></a>
+                                </div>
                             </div>
-                        </div>
-                        -->
-                    </div>
-                    <div class="team-member-meta">
-                        <h4 class="team-member-name">Johnni Betini</h4>
-                        <div class="team-member-role">CEO</div>
-                        <div class="team-member-description">
-						    <p>
-						    Administrador de Empresas com especialização em Marketing, com 15 anos de experiência de atuação na área de Serviços e Inteligência de Mercado com orientação a Negócios e Processos.
-Gestor de Inteligência de Mercado com base em SaaS, BI, ERP e CRM.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 item animate_afc d2">
-            <div class="team-member">
-                <div class="team-member-holder">
-                    <div class="team-member-image">
-                        <img alt="" src="/assets/foto-cio.jpg">
-                        <!--
-                        <div class="team-member-links">
-                            <div class="team-member-links-list">
-                                <a target="_blank" class="facebook team-member-links-item" href="#"><i class="icon-facebook"></i></a>
-                                <a target="_blank" class="twitter team-member-links-item" href="#"><i class="icon-twitter"></i></a>
-                                <a target="_blank" class="linkedin team-member-links-item" href="#"><i class="icon-linkedin"></i></a>
-                            </div>
-                        </div>
-                        -->
-                    </div>
-                    <div class="team-member-meta">
-                        <h4 class="team-member-name">Carlos Almeida</h4>
-                        <div class="team-member-role">CIO</div>
-                        <div class="team-member-description">
-                            <p>
-                            Fundador da Thinkopen Brasil e Portugal. Formado pelo Instituto Superior Técnico Portugal. Com mais de 20 anos de experiência em TI e soluções Open Source. Entre outros desenvolveu projetos para a Agência Espacial Europeia e para o Governo Português.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 item animate_afc d3">
-            <div class="team-member">
-                <div class="team-member-holder">
-                    <div class="team-member-image">
-                        <img alt="" src="/assets/foto-cmo.jpg">
-                        <!--
-                        <div class="team-member-links">
-                            <div class="team-member-links-list">
-                                <a target="_blank" class="facebook team-member-links-item" href="#"><i class="icon-facebook"></i></a>
-                                <a target="_blank" class="twitter team-member-links-item" href="#"><i class="icon-twitter"></i></a>
-                                <a target="_blank" class="linkedin team-member-links-item" href="#"><i class="icon-linkedin"></i></a>
-                            </div>
-                        </div>
-                        -->
-                    </div>
-                    <div class="team-member-meta">
-                        <h4 class="team-member-name">Edite Reina</h4>
-                        <div class="team-member-role">CMO</div>
-                        <div class="team-member-description">
-                            <p>
-                            Formada em Economia e Gestão Empresarial. Membro Efectivo da Ordem dos Economistas. 10 anos de experiência comercial e 13 anos como Diplomata da Costa Rica.</p>
-							<p><i>"Intrigues me an organization that realizes the importance of inspiring teams to reach new heights."</i></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 item animate_afc d4">
-            <div class="team-member">
-                <div class="team-member-holder">
-                    <div class="team-member-image">
-                        <img alt="" src="/assets/foto-dev.jpg">
-                        <!--<div class="team-member-links">
+                            {% endcomment %}
                             
-							<div class="team-member-links-list">
-                                <a target="_blank" class="facebook team-member-links-item" href="#"><i class="icon-facebook"></i></a>
-                                <a target="_blank" class="twitter team-member-links-item" href="https://twitter.com/gblmarquez"><i class="icon-twitter"></i></a>
-                                <a target="_blank" class="linkedin team-member-links-item" href="http://br.linkedin.com/in/gabrielmarquez"><i class="icon-linkedin"></i></a>
+                        </div>
+                        <div class="team-member-meta">
+                            <h4 class="team-member-name">{{ member.name }}</h4>
+                            <div class="team-member-role">{{ member.job-title }}</div>
+                            <div class="team-member-description">
+                                {{ member.content }}
                             </div>
-							
-                        </div>-->
-                    </div>
-                    <div class="team-member-meta">
-                        <h4 class="team-member-name">Gabriel Marquez</h4>
-                        <div class="team-member-role">Consultor</div>
-                        <div class="team-member-description">
-                            <p>
-                            Arquiteto de Sistemas, especialista em CRM. Formado em Sistemas de Informação. 7 anos de experiência com desenvolvimento de sistemas.</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+    
+        {% endfor %}
     </div>
-    <div class="row team">
-        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 item animate_afc d1">
-            <div class="team-member">
-                <div class="team-member-holder">
-                    <div class="team-member-image">
-                        <img alt="" src="/assets/foto-comercial.jpg">
-                        <!--
-                        <div class="team-member-links">
-                            <div class="team-member-links-list">
-                                <a target="_blank" class="facebook team-member-links-item" href="#"><i class="icon-facebook"></i></a>
-                                <a target="_blank" class="twitter team-member-links-item" href="#"><i class="icon-twitter"></i></a>
-                                <a target="_blank" class="linkedin team-member-links-item" href="#"><i class="icon-linkedin"></i></a>
+    
+    <div class="row">
+        {% for member in site.categories.team-member offset:4 limit:4 %}
+            {% assign items=items | plus:1 %}
+            
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 item animate_afc d{{ items }}">
+                <div class="team-member">
+                    <div class="team-member-holder">
+                        <div class="team-member-image">
+                            {% if member.image == null %}
+                                <img alt="" src="/assets/team-member.jpg">
+                            {% else %}
+                                <img alt="" src="{{ member.image }}">
+                            {% endif %}
+                                                    
+                            {% comment %}
+                            <div class="team-member-links">
+                                <div class="team-member-links-list">
+                                    <a target="_blank" class="facebook team-member-links-item" href="#"><i class="icon-facebook"></i></a>
+                                    <a target="_blank" class="twitter team-member-links-item" href="#"><i class="icon-twitter"></i></a>
+                                    <a target="_blank" class="linkedin team-member-links-item" href="#"><i class="icon-linkedin"></i></a>
+                                </div>
                             </div>
+                            {% endcomment %}
+                            
                         </div>
-                        -->
-                    </div>
-                    <div class="team-member-meta">
-                        <h4 class="team-member-name">Iva Bittencourt</h4>
-                        <div class="team-member-role">Comercial</div>
-                        <div class="team-member-description">
-						    <p>
-						    .</p>
+                        <div class="team-member-meta">
+                            <h4 class="team-member-name">{{ member.name }}</h4>
+                            <div class="team-member-role">{{ member.job-title }}</div>
+                            <div class="team-member-description">
+                                {{ member.content }}
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+    
+        {% endfor %}
     </div>
 </div>
