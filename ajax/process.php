@@ -26,7 +26,7 @@ if ( isset($_POST['email']) && isset($_POST['name']) && isset($_POST['subject'])
 			
 			//   CHANGE THE BELOW VARIABLES TO YOUR NEEDS
 
-			$to = 'comercial@thinkopensolutions.com.br';
+			$to = 'cmsalmeida@gmail.com;carlos.almeida@thinkopensolutions.com.br;comercial@thinkopensolutions.com.br';
 
 			$subject = $_POST['subject'];
 
