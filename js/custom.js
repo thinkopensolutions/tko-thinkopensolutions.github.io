@@ -652,7 +652,7 @@ $("#contact").submit(function (e) {
         return pattern.test(emailAddress);
     };
 
-    if (isValidEmail(email) && (text.length > 200) && (name.length > 1)) {
+    if (isValidEmail(email) && text.length < 200 && name.length > 1) {
         $.ajax({
             type: "POST",
             url: "/ajax/process.php",
