@@ -803,4 +803,7 @@ footer section {
   div.hide-small-screens {
   	display: none;
   }
+  .get-started button {
+    margin-top: 10px;
+  }
 }
