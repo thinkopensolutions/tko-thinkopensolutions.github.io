@@ -7,4 +7,5 @@ job-title: Comercial
 ---
 
 Com experiência na área comercial faz mais de 20 anos.
-"A área de TI uma é uma área que me fascina desde sempre. Estou feliz por fazer parte desta equipe forte, consistente e que marca um diferencial no mercado. São necessários projetos como este para o Brasil marcar um diferencial."
+
+"A área de TI é uma área que me fascina desde sempre. Estou feliz por fazer parte desta equipe forte, consistente e que marca um diferencial no mercado. São necessários mais projetos como este no Brasil."
