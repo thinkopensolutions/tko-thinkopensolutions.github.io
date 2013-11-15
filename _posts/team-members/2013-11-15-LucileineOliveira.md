@@ -1,8 +1,8 @@
 ---
 published: true
 categories: team-member
-name: Lucileine Oliveira
-image: /assets/team-member-lucileineoliveira.jpg
+name: Lucilene Oliveira
+image: /assets/team-member-lucileneoliveira.jpg
 job-title: Comercial
 ---
 
