@@ -1,88 +1,38 @@
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
     <h3 class="title">Nossa Equipe</h3>
-
-    {% assign itemsByRow=4 %}
-    {% assign items=0 %}
-
+{% assign itemsByRow=4 %}
+{% assign items=0 %}
+{% for member in site.categories.team-member reversed %}
+    {% assign items=items | plus:1 %}
+    {% if items > itemsByRow %}
+	    {% assign items=1 %}
+    {% endif %}
+    {% if items == 1 %}
     <div class="row">
-        {% for member in site.categories.team-member offset:0 limit:4 %}
-            {% assign items=items | plus:1 %}
-
-            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 item animate_afc d{{ items }}">
-                <div class="team-member">
-                    <div class="team-member-holder">
-                        <div class="team-member-image">
-                            {% if member.image == null %}
-                                <img alt="" src="/assets/team-member.jpg">
-                            {% else %}
-                            <img alt="" src="{{ member.image }}">
-                            {% endif %}
-
-                            {% comment %}
-                            <div class="team-member-links">
-                                <div class="team-member-links-list">
-                                    <a target="_blank" class="facebook team-member-links-item" href="#"><i class="icon-facebook"></i></a>
-                                    <a target="_blank" class="twitter team-member-links-item" href="#"><i class="icon-twitter"></i></a>
-                                    <a target="_blank" class="linkedin team-member-links-item" href="#"><i class="icon-linkedin"></i></a>
-                                </div>
-                            </div>
-                            {% endcomment %}
-
-                        </div>
-                        <div class="team-member-meta">
-                            <h4 class="team-member-name">{{ member.name }}</h4>
-                            {% comment %}
-                            <div class="team-member-role">{{ member.job-title }}</div>
-                            {% endcomment %}
-                            <div class="team-member-description">
-                                {{ member.content }}
-                            </div>
+    {% endif %}
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 item animate_afc d{{ items }}">
+            <div class="team-member">
+                <div class="team-member-holder">
+                    <div class="team-member-image">
+                        {% if member.image == null %}
+                            <img alt="" src="/assets/team-member.jpg">
+                        {% else %}
+                        <img alt="" src="{{ member.image }}">
+                        {% endif %}
+                    </div>
+                    <div class="team-member-meta">
+                        <h4 class="team-member-name">{{ member.name }}</h4>
+                        <div class="team-member-role">{{ member.job-title }}</div>
+                        <div class="team-member-description">
+                            {{ member.content }}
                         </div>
                     </div>
                 </div>
             </div>
-
-        {% endfor %}
-    </div>
-
-    <div class="row">
-        {% for member in site.categories.team-member offset:4 limit:4 %}
-            {% assign items=items | plus:1 %}
-
-            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 item animate_afc d{{ items }}">
-                <div class="team-member">
-                    <div class="team-member-holder">
-                        <div class="team-member-image">
-                            {% if member.image == null %}
-                                <img alt="" src="/assets/team-member.jpg">
-                            {% else %}
-                                <img alt="" src="{{ member.image }}">
-                            {% endif %}
-
-                            {% comment %}
-                            <div class="team-member-links">
-                                <div class="team-member-links-list">
-                                    <a target="_blank" class="facebook team-member-links-item" href="#"><i class="icon-facebook"></i></a>
-                                    <a target="_blank" class="twitter team-member-links-item" href="#"><i class="icon-twitter"></i></a>
-                                    <a target="_blank" class="linkedin team-member-links-item" href="#"><i class="icon-linkedin"></i></a>
-                                </div>
-                            </div>
-                            {% endcomment %}
-
-                        </div>
-                        <div class="team-member-meta">
-                            <h4 class="team-member-name">{{ member.name }}</h4>
-                            {% comment %}
-                            <div class="team-member-role">{{ member.job-title }}</div>
-                            {% endcomment %}
-                            <div class="team-member-description">
-                                {{ member.content }}
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        {% endfor %}
-    </div>
+        </div>
+	{% if items == itemsByRow %}
+	</div>
+	{% endif %}
+{% endfor %}
+	</div>
 </div>

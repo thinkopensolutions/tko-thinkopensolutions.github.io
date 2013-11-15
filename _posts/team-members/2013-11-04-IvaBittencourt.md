@@ -6,4 +6,4 @@ image: /assets/team-member-ivabittencourt.jpg
 job-title: Comercial
 ---
 
-Comercial.
+---
