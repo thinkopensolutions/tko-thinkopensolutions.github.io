@@ -2339,6 +2339,10 @@ a.portfolio-item-link {
     background: #C92228;
 }
 
+.team .item .team-member-links a.oerp:hover,.member-social.dark a.oerp:hover,header .social li.oerp:hover,footer .social li.oerp:hover {
+    background: #323B44;
+}
+
 header .social li.rss:hover,footer .social li.rss:hover {
     background: #f60;
 }
