@@ -53,15 +53,13 @@
             <nav class="collapse navbar-collapse menu">
                 <ul class="nav navbar-nav sf-menu">
                     <li><a {% if page.url == "/index.html" %} id="current"{% endif %} href="/">Home</a></li>
+					<li><a href="/erp" class="sf-with-ul">O ERP</a></li>
+                    <li><a {% if page.url == "/servicos/index.html" or page.url == "/erp/index.html" %} id="current"{% endif %} href="/servicos" class="sf-with-ul">Serviços</a></li>
                     <li><a {% if page.url == "/empresa/index.html" or page.url == "/porque/index.html" %} id="current"{% endif %} href="/empresa" class="sf-with-ul">A Empresa</a>
 						<ul>
-						  <li><a href="/porque" class="sf-with-ul">Porquê ?</a></li>
+							<li><a href="/porque" class="sf-with-ul">Porquê ?</a></li>
 						</ul>
                     </li>
-                    <li><a {% if page.url == "/servicos/index.html" or page.url == "/erp/index.html" %} id="current"{% endif %} href="/servicos" class="sf-with-ul">Serviços</a>
-						<ul>
-						  <li><a href="/erp" class="sf-with-ul">Solução ERP</a></li>
-						</ul></li>
                     <li><a {% if page.url == "/blog/index.html" %} id="current"{% endif %} href="/blog" class="sf-with-ul">Blog</a></li>
                     <li><a {% if page.url == "/testemunhos/index.html" %} id="current"{% endif %} href="/testemunhos">Testemunhos</a></li>
                     <li><a {% if page.url == "/contato/index.html" %} id="current"{% endif %} href="/contato">Contatos</a></li>
