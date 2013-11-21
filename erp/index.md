@@ -1,5 +1,5 @@
 ---
-title: Serviços > Solução ERP
+title: Solução ERP
 layout: page
 class: page-erp
 ---
