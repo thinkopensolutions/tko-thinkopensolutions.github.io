@@ -1,7 +1,7 @@
 git add .
 git commit -m "some coments"
 git push --> to send dev to github
-git push origin master --> to send dev to master
 git checkout master --> switch to master
+git pull origin dev --> to get dev changes
 git push --> to send master to github
 git checkout dev --> to switch to dev
