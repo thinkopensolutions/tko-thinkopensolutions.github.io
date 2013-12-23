@@ -5,3 +5,6 @@ git checkout master --> switch to master
 git pull origin dev --> to get dev changes
 git push --> to send master to github
 git checkout dev --> to switch to dev
+
+### ALL IN ONE ###
+git status; git push; git checkout master; git pull origin dev; git push; git checkout dev; git status
