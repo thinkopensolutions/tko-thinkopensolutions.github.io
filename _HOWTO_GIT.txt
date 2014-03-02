@@ -1,11 +1,12 @@
-git add .
-git commit -m "some coments"
-git merge master
-git checkout master --> switch to master
-git merge dev
-git pull origin dev --> to get dev changes from github
-git push --> to send master to github
-git checkout dev --> to switch to dev
+#!/bin/bash
 
-### ALL IN ONE ###
-git status; git push; git checkout master; git pull origin dev; git push; git checkout dev; git status
+git pull origin master
+git pull origin dev
+git checkout master
+git add .
+git commit -am "some coments"
+git merge master
+git checkout master
+git merge dev
+git push origin master
+git push origin dev
