@@ -615,6 +615,42 @@ jQuery(document).ready(function () {
 		jQuery("#example_bottom").popover({
 			placement: 'bottom'
 		});
+		jQuery("#pop01").popover({
+			placement: 'top'
+		});
+		jQuery("#pop02").popover({
+			placement: 'top'
+		});
+		jQuery("#pop03").popover({
+			placement: 'top'
+		});
+		jQuery("#pop04").popover({
+			placement: 'top'
+		});
+		jQuery("#pop05").popover({
+			placement: 'top'
+		});
+		jQuery("#pop06").popover({
+			placement: 'top'
+		});
+		jQuery("#pop07").popover({
+			placement: 'top'
+		});
+		jQuery("#pop08").popover({
+			placement: 'top'
+		});
+		jQuery("#pop09").popover({
+			placement: 'top'
+		});
+		jQuery("#pop10").popover({
+			placement: 'top'
+		});
+		jQuery("#pop11").popover({
+			placement: 'top'
+		});
+		jQuery("#pop12").popover({
+			placement: 'top'
+		});
 	}); 
 
 

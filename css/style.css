@@ -2220,8 +2220,8 @@ a.portfolio-item-link {
     color: #FFFFFF;
     float: left;
     font-size: 28px;
-    left: 32%;
-    line-height: 80px;
+    left: 26%;
+    line-height: 60px;
     position: relative;
     z-index: 5;
 	text-shadow:0 3px 0 rgba(0, 0, 0, 0.1);
@@ -2233,8 +2233,8 @@ a.portfolio-item-link {
 
 .ch-info-wrap {
     position: absolute;
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     background: #666;
     
@@ -2244,8 +2244,8 @@ a.portfolio-item-link {
 
 .ch-info {
     position: absolute;
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     -webkit-box-shadow: 0 0 0 5px rgba(0,0,0,0.2);
     box-shadow: 0 0 0 5px rgba(0,0,0,0.2);
