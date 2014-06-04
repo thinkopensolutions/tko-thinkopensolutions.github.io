@@ -717,7 +717,6 @@ $("#talentos").submit(function (e) {
     var text = $("#text").val();
     var dataString = 'name=' + name + '&email=' + email + '&vaga=' + vaga + '&vaga_other=' + vaga_other + '&text=' + text;
 	
-
     function isValidEmail(emailAddress) {
         var pattern = new RegExp(/^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/);
         return pattern.test(emailAddress);
@@ -751,7 +750,6 @@ $("#parceiros").submit(function (e) {
 	var parceria = $("#parceria").val();
     var text = $("#text").val();
     var dataString = 'name=' + name + '&telefone=' + telefone + '&email=' + email + '&parceria=' + parceria + '&text=' + text;
-	
 
     function isValidEmail(emailAddress) {
         var pattern = new RegExp(/^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/);
@@ -765,7 +763,7 @@ $("#parceiros").submit(function (e) {
             data: dataString,
             success: function () {
                 $('.success').fadeIn(1000).delay(3000).fadeOut(1000);
-                $('#talentos')[0].reset();
+                $('#parceiros')[0].reset();
             }
         });
     } else {
