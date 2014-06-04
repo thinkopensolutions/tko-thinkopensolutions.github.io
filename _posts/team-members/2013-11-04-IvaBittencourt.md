@@ -6,4 +6,4 @@ image: /assets/team-member-ivabittencourt.jpg
 job-title: Comercial
 ---
 
-Com experiência em atendimento ao cliente por mais de 20 anos, área comercial. Atualmente estou muito satisfeita, coordenando a área comercial da Thinkopen Solutions Brasil.
+Com experiência em atendimento ao cliente por mais de vinte anos, área comercial. Atualmente estou muito satisfeita, coordenando a área comercial da Thinkopen Solutions Brasil.

@@ -1,0 +1,95 @@
+<div class="content">
+	<div class="container">
+		<div class="row">
+		    <div class="col-lg-8 col-md-8 col-sm-6 col-xs-12" id="contact-form">
+		        <h3 class="title">Encaminhe seu Currículo</h3>
+		        <p>Venha fazer parte da construção de uma empresa inovadora, que busca constantemente  a excelência no time de profissionais.</h3>
+		        <p>Com uma equipe altamente qualificada e com diferentes perfis, temos a combinação perfeita para desenvolver as melhores ofertas aos nossos clientes, garantindo assim, um crescimento constante tanto da empresa como da equipe.</p>
+		        Com este cenário a TKO BR oferece uma ambiente desafiador e de constante desenvolvimento  profissional, possibilitando a todos, acesso as tecnologias mais modernas do mundo.<br />
+		        Venha fazer parte do nosso time e junto conosco ajudar a transformar a tecnologia em um meio de facilitar processos, agilizar decisões e agregar valor impactando na qualidade de vida profissional, suas famílias e na sociedade em geral.</p>
+		        <div class="divider"></div>
+		        <form method="post" class="reply" id="talentos">
+		            <fieldset>
+		                <div class="row">
+		                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+		                        <label>Nome: <span>*</span></label>
+		                        <input class="form-control" id="name" name="name" type="text" value="" required>
+		                    </div>
+		                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+		                        <label>Email: <span>*</span></label>
+		                        <input class="form-control" type="email" id="email" name="email" value="" required>
+		                    </div>
+		                </div>
+		                <div class="row">
+		                	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+				            	<label>Com qual função você mais se identifica? <span>*</span></label>
+								<select class="form-control" name="vaga" required>
+								  <option value="vazio"></option>
+								  <option value="Especialista em Desenvolvimento">Especialista em Desenvolvimento</option>
+								  <option value="Executivo de Negócios">Executivo de Negócios</option>
+								  <option value="Assistente Administrativo">Assistente Administrativo</option>
+								  <option value="Estágio">Estágio</option>
+								  <option value="Estágio">Outro...</option>
+								</select>
+							</div>
+		                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+		                        <label>Crie sua própria vaga: </label>
+		                        <input class="form-control" id="vaga_other" name="Outro" type="text" value="">
+		                    </div>
+		                </div>
+		                <div class="row">
+		                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+		                        <label>Mensagem: <span>*</span></label>
+		                        <textarea class="form-control" id="text" name="text" rows="3" cols="40" required></textarea>
+		                    </div>
+		                </div>
+		            </fieldset>
+		            <div class="success alert-success alert" style="display:none">A sua mensagem foi enviada com sucesso.</div>
+		            <div class="error alert-error alert" style="display:none">O E-mail deve ser correto e a mensagem não pode ser maior que 200 letras.</div>
+		            <button class="btn-normal btn-color submit  bottom-pad" type="submit">Enviar</button>
+		            <div class="clearfix">
+		            </div>
+		        </form>
+		    </div>
+		    <div class="col-lg-4 col-md-4 col-xs-12 col-sm-6">
+		        <div class="address widget">
+		            <h3 class="title">Sede Brasil</h3>
+		            {% include address.html %}
+		        </div>
+		        <div class="contact-info widget">
+		            <h3 class="title">Expediente Escritório</h3>
+		            <ul>
+		                <li><i class="icon-time"> </i>Segunda - Sexta 9h às 17h </li>
+		                <li><i class="icon-time"> </i>Sábados - 9h às 11h</li>
+		                <li><i class="icon-remove-circle"> </i>Domingo - Closed</li>
+		                <li><br><i class="icon-warning-sign"> </i>Suporte 24/7</li>
+		            </ul>
+		        </div>
+		        <div class="address widget">
+		            <h3 class="title">Sede Portugal</h3>
+		            {% include address-portugal.html %}
+		        </div>
+		        <div class="follow widget">
+		            <h3 class="title">Siga-nos</h3>
+		            <div class="member-social dark">
+		                <a class="facebook" href="#"><i class="icon-facebook"></i></a>
+		                <a class="twitter" href="#"><i class="icon-twitter"></i></a>
+		                <a class="linkedin" href="#"><i class="icon-linkedin"></i></a>
+		                <a class="gplus" href="#"><i class="icon-google-plus"></i></a>
+		                <a class="gplus" href="#"><i class="icon-youtube-play"></i></a>
+		            </div>
+		        </div>
+		    </div>
+		</div>
+		<div class="divider"></div>
+		<div class="row">
+		    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+		        <h3 class="title">A Nossa Localização</h3>
+		        <div id="maps" class="google-maps">
+		        </div>
+		        <!-- Left Section End -->
+		    </div>
+		</div>
+		<div class="divider"></div>
+	</div>
+</div>

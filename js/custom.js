@@ -704,3 +704,73 @@ $("#contact").submit(function (e) {
 
     return false;
 });
+
+	/*----------------------------------------------------*/
+	/*	Banco Talentos Form Section
+	/*----------------------------------------------------*/
+$("#talentos").submit(function (e) {
+    e.preventDefault();
+    var name = $("#name").val();
+    var email = $("#email").val();
+	var vaga = $("#vaga").val();
+	var vaga_other = $("#vaga_other").val();
+    var text = $("#text").val();
+    var dataString = 'name=' + name + '&email=' + email + '&vaga=' + vaga + '&vaga_other=' + vaga_other + '&text=' + text;
+	
+
+    function isValidEmail(emailAddress) {
+        var pattern = new RegExp(/^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/);
+        return pattern.test(emailAddress);
+    };
+
+    if (isValidEmail(email) && text.length < 200 && name.length > 1) {
+        $.ajax({
+            type: "POST",
+            url: "/ajax/process_talentos.php",
+            data: dataString,
+            success: function () {
+                $('.success').fadeIn(1000).delay(3000).fadeOut(1000);
+                $('#talentos')[0].reset();
+            }
+        });
+    } else {
+        $('.error').fadeIn(1000).delay(5000).fadeOut(1000);
+    }
+
+    return false;
+});
+
+	/*----------------------------------------------------*/
+	/*	Parceiros Form Section
+	/*----------------------------------------------------*/
+$("#parceiros").submit(function (e) {
+    e.preventDefault();
+    var name = $("#name").val();
+    var telefone = $("#telefone").val();
+    var email = $("#email").val();
+	var parceria = $("#parceria").val();
+    var text = $("#text").val();
+    var dataString = 'name=' + name + '&telefone=' + telefone + '&email=' + email + '&parceria=' + parceria + '&text=' + text;
+	
+
+    function isValidEmail(emailAddress) {
+        var pattern = new RegExp(/^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/);
+        return pattern.test(emailAddress);
+    };
+
+    if (isValidEmail(email) && text.length < 200 && name.length > 1) {
+        $.ajax({
+            type: "POST",
+            url: "/ajax/parceiros.php",
+            data: dataString,
+            success: function () {
+                $('.success').fadeIn(1000).delay(3000).fadeOut(1000);
+                $('#talentos')[0].reset();
+            }
+        });
+    } else {
+        $('.error').fadeIn(1000).delay(5000).fadeOut(1000);
+    }
+
+    return false;
+});
