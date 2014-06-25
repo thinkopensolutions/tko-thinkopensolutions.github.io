@@ -16,4 +16,6 @@ lang: pt-br
 {% endcomment %}
 
 {% include our_clients.html %}
+{% comment %}
 {% include latest_posts.html %}
+{% endcomment %}
