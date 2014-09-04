@@ -1,5 +1,8 @@
 #!/bin/bash
 
+git push origin dev; git checkout master; git pull origin dev; git push origin master; git checkout dev; git status
+
+exit
 git pull origin master
 git pull origin dev
 git checkout master
