@@ -28,7 +28,7 @@ if ( isset($_POST['email']) && isset($_POST['name']) && isset($_POST['vaga']) &&
 			
 			//   CHANGE THE BELOW VARIABLES TO YOUR NEEDS
 
-			$to = 'cma@thinkopensolutions.com.br;cmsalmeida@gmail.com;carlos.almeida@tkobr.com;comercial@tkobr.com';
+			$to = 'cma@thinkopensolutions.com.br;cmsalmeida@gmail.com;carlos.almeida@tkobr.com;comercial@tkobr.com;info@tkobr.com;info.uk@tkobr.com';
 
 			$subject = 'Banco de talentos';
 
