@@ -689,7 +689,7 @@ $("#contact").submit(function (e) {
     if (isValidEmail(email) && text.length < 200 && name.length > 1) {
         $.ajax({
             type: "POST",
-            url: "/ajax/process.php",
+            url: "/ajax/process_contato.php",
             data: dataString,
             success: function () {
                 $('.success').fadeIn(1000).delay(3000).fadeOut(1000);
@@ -757,7 +757,7 @@ $("#parceiros").submit(function (e) {
     if (isValidEmail(email) && text.length < 200 && name.length > 1) {
         $.ajax({
             type: "POST",
-            url: "/ajax/parceiros.php",
+            url: "/ajax/process_parceiros.php",
             data: dataString,
             success: function () {
                 $('.success').fadeIn(1000).delay(3000).fadeOut(1000);
