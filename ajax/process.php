@@ -1,7 +1,8 @@
 <?php
 // Email Submit
 // Note: filter_var() requires PHP >= 5.2.0
-if ( isset($_POST['email']) && isset($_POST['name']) && isset($_POST['subject']) && isset($_POST['text']) && filter_var($_POST['email'], FILTER_VALIDATE_EMAIL) ) {
+// if ( isset($_POST['email']) && isset($_POST['name']) && isset($_POST['subject']) && isset($_POST['text']) && filter_var($_POST['email'], FILTER_VALIDATE_EMAIL) ) {
+if ( isset($_POST['email']) && isset($_POST['name']) && && isset($_POST['text']) && filter_var($_POST['email'], FILTER_VALIDATE_EMAIL) ) {
  
   // detect & prevent header injections
   $test = "/(content-type|bcc:|cc:|to:)/i";
@@ -29,9 +30,9 @@ if ( isset($_POST['email']) && isset($_POST['name']) && isset($_POST['subject'])
 			// $to = 'cma@thinkopensolutions.com.br;cmsalmeida@gmail.com;carlos.almeida@tkobr.com;comercial@tkobr.com;info@tkobr.com;info.uk@tkobr.com';
 			$to = 'info@tkobr.com,cmsalmeida@gmail.com';
 
-			$subject = $_POST['subject'];
+			$subject = "Contato Website";
 
-			$headers = "From: website@tkobr.com\r\n";
+			// $headers = "From: website@tkobr.com\r\n";
 			$headers .= "Reply-To: ". strip_tags($_POST['email']) . "\r\n";
 			$headers .= "MIME-Version: 1.0\r\n";
 			$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
