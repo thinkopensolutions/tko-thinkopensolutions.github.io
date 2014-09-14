@@ -693,7 +693,7 @@ $("#contact").submit(function (e) {
             data: dataString,
             success: function () {
                 $('.success').fadeIn(1000).delay(3000).fadeOut(1000);
-                $('#contact')[0].reset();
+                $('#talentos')[0].reset();
             }
         });
     } else {
