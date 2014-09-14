@@ -678,9 +678,8 @@ $("#contact").submit(function (e) {
     e.preventDefault();
     var name = $("#name").val();
     var email = $("#email").val();
-	var subject = $("#subject").val();
     var text = $("#text").val();
-    var dataString = 'name=' + name + '&email=' + email + '&subject=' + subject + '&text=' + text;
+    var dataString = 'name=' + name + '&email=' + email + '&text=' + text;
 	
 
     function isValidEmail(emailAddress) {
