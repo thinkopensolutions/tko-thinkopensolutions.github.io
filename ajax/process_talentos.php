@@ -16,7 +16,7 @@ if ( isset($_POST['email']) && isset($_POST['name']) && isset($_POST['vaga']) &&
 
 			$message = '<html><body>';
 			$message .= '<table rules="all" style="border-color: #666;" cellpadding="10">';
-			$message .= "<tr style='background: #eee;'><td><strong>Name:</strong> </td><td>" . strip_tags($_POST['name']) . "</td></tr>";
+			$message .= "<tr style='background: #eee;'><td><strong>Nome:</strong> </td><td>" . strip_tags($_POST['name']) . "</td></tr>";
 			$message .= "<tr><td><strong>Email:</strong> </td><td>" . strip_tags($_POST['email']) . "</td></tr>";
 			$message .= "<tr><td><strong>Vaga:</strong> </td><td>" . strip_tags($_POST['vaga']) . "</td></tr>";
 			$message .= "<tr><td><strong>Outra:</strong> </td><td>" . strip_tags($_POST['vaga_other']) . "</td></tr>";

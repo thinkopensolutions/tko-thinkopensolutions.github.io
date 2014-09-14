@@ -17,7 +17,7 @@ if ( isset($_POST['email']) && isset($_POST['name']) && isset($_POST['text']) &&
 
 			$message = '<html><body>';
 			$message .= '<table rules="all" style="border-color: #666;" cellpadding="10">';
-			$message .= "<tr style='background: #eee;'><td><strong>Name:</strong> </td><td>" . strip_tags($_POST['name']) . "</td></tr>";
+			$message .= "<tr style='background: #eee;'><td><strong>Nome:</strong> </td><td>" . strip_tags($_POST['name']) . "</td></tr>";
 			$message .= "<tr><td><strong>Email:</strong> </td><td>" . strip_tags($_POST['email']) . "</td></tr>";
 			$message .= "<tr><td><strong>Message:</strong> </td><td>" . htmlentities($_POST['text']) . "</td></tr>";
 			$message .= "</table>";
