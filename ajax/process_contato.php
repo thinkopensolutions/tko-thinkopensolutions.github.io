@@ -2,7 +2,7 @@
 // Email Submit
 // Note: filter_var() requires PHP >= 5.2.0
 // if ( isset($_POST['email']) && isset($_POST['name']) && isset($_POST['subject']) && isset($_POST['text']) && filter_var($_POST['email'], FILTER_VALIDATE_EMAIL) ) {
-if ( isset($_POST['email']) && isset($_POST['name']) && && isset($_POST['text']) && filter_var($_POST['email'], FILTER_VALIDATE_EMAIL) ) {
+if ( isset($_POST['email']) && isset($_POST['name']) && isset($_POST['text']) && filter_var($_POST['email'], FILTER_VALIDATE_EMAIL) ) {
  
   // detect & prevent header injections
   $test = "/(content-type|bcc:|cc:|to:)/i";
