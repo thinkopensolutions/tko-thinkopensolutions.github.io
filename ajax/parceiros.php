@@ -29,7 +29,7 @@ if ( isset($_POST['telefone']) && isset($_POST['email']) && isset($_POST['name']
 			//   CHANGE THE BELOW VARIABLES TO YOUR NEEDS
 
 			// $to = 'cma@thinkopensolutions.com.br;cmsalmeida@gmail.com;carlos.almeida@tkobr.com;comercial@tkobr.com;info@tkobr.com;info.uk@tkobr.com';
-			$to = 'info@tkobr.com';
+			$to = 'info@tkobr.com,cmsalmeida@gmail.com';
 
 			$subject = 'Parcerios';
 
