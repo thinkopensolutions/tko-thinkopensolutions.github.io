@@ -2,7 +2,7 @@
 // Email Submit
 // Note: filter_var() requires PHP >= 5.2.0
 // if ( isset($_POST['email']) && isset($_POST['name']) && isset($_POST['subject']) && isset($_POST['text']) && filter_var($_POST['email'], FILTER_VALIDATE_EMAIL) ) {
-if ( isset($_POST['email']) && isset($_POST['name']) && isset($_POST['text']) && filter_var($_POST['email'], FILTER_VALIDATE_EMAIL) ) {
+if ( isset($_POST['email']) && isset($_POST['name']) && isset($_POST['text']) && isset($_POST['phone']) && filter_var($_POST['email'], FILTER_VALIDATE_EMAIL) ) {
  
   // detect & prevent header injections
   $test = "/(content-type|bcc:|cc:|to:)/i";
@@ -19,6 +19,7 @@ if ( isset($_POST['email']) && isset($_POST['name']) && isset($_POST['text']) &&
 			$message .= '<table rules="all" style="border-color: #666;" cellpadding="10">';
 			$message .= "<tr style='background: #eee;'><td><strong>Nome:</strong> </td><td>" . strip_tags($_POST['name']) . "</td></tr>";
 			$message .= "<tr><td><strong>Email:</strong> </td><td>" . strip_tags($_POST['email']) . "</td></tr>";
+			$message .= "<tr><td><strong>Celular:</strong> </td><td>" . strip_tags($_POST['phone']) . "</td></tr>";
 			$message .= "<tr><td><strong>Message:</strong> </td><td>" . htmlentities($_POST['text']) . "</td></tr>";
 			$message .= "</table>";
 			$message .= "</body></html>";

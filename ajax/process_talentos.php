@@ -1,7 +1,7 @@
 <?php
 // Email Submit
 // Note: filter_var() requires PHP >= 5.2.0
-if ( isset($_POST['email']) && isset($_POST['name']) && isset($_POST['vaga']) && isset($_POST['vaga_other']) && isset($_POST['text']) && filter_var($_POST['email'], FILTER_VALIDATE_EMAIL) ) {
+if ( isset($_POST['email']) && isset($_POST['name']) && isset($_POST['vaga']) && isset($_POST['phone']) && isset($_POST['vaga_other']) && isset($_POST['text']) && filter_var($_POST['email'], FILTER_VALIDATE_EMAIL) ) {
  
   // detect & prevent header injections
   $test = "/(content-type|bcc:|cc:|to:)/i";
@@ -18,6 +18,7 @@ if ( isset($_POST['email']) && isset($_POST['name']) && isset($_POST['vaga']) &&
 			$message .= '<table rules="all" style="border-color: #666;" cellpadding="10">';
 			$message .= "<tr style='background: #eee;'><td><strong>Nome:</strong> </td><td>" . strip_tags($_POST['name']) . "</td></tr>";
 			$message .= "<tr><td><strong>Email:</strong> </td><td>" . strip_tags($_POST['email']) . "</td></tr>";
+			$message .= "<tr><td><strong>Telefone:</strong> </td><td>" . strip_tags($_POST['phone']) . "</td></tr>";
 			$message .= "<tr><td><strong>Vaga:</strong> </td><td>" . strip_tags($_POST['vaga']) . "</td></tr>";
 			$message .= "<tr><td><strong>Outra:</strong> </td><td>" . strip_tags($_POST['vaga_other']) . "</td></tr>";
 			$message .= "<tr><td><strong>Message:</strong> </td><td>" . htmlentities($_POST['text']) . "</td></tr>";

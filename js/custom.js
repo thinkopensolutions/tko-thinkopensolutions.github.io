@@ -678,9 +678,10 @@ $("#contact").submit(function (e) {
     e.preventDefault();
     var name = $("#name").val();
     var email = $("#email").val();
+    var email = $("#phone").val();
 	var subject = $("#subject").val();
     var text = $("#text").val();
-    var dataString = 'name=' + name + '&email=' + email + '&subject=' + subject + '&text=' + text;
+    var dataString = 'name=' + name + '&email=' + email + '&phone=' + phone + '&subject=' + subject + '&text=' + text;
 	
 
     function isValidEmail(emailAddress) {
@@ -712,10 +713,11 @@ $("#talentos").submit(function (e) {
     e.preventDefault();
     var name = $("#name").val();
     var email = $("#email").val();
+    var email = $("#phone").val();
 	var vaga = $("#vaga").val();
 	var vaga_other = $("#vaga_other").val();
     var text = $("#text").val();
-    var dataString = 'name=' + name + '&email=' + email + '&vaga=' + vaga + '&vaga_other=' + vaga_other + '&text=' + text;
+    var dataString = 'name=' + name + '&email=' + '&phone=' + phone + '&vaga=' + vaga + '&vaga_other=' + vaga_other + '&text=' + text;
 	
     function isValidEmail(emailAddress) {
         var pattern = new RegExp(/^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/);
