@@ -678,7 +678,7 @@ $("#contact").submit(function (e) {
     e.preventDefault();
     var name = $("#name").val();
     var email = $("#email").val();
-    var email = $("#phone").val();
+    var phone = $("#phone").val();
 	var subject = $("#subject").val();
     var text = $("#text").val();
     var dataString = 'name=' + name + '&email=' + email + '&phone=' + phone + '&subject=' + subject + '&text=' + text;
@@ -713,7 +713,7 @@ $("#talentos").submit(function (e) {
     e.preventDefault();
     var name = $("#name").val();
     var email = $("#email").val();
-    var email = $("#phone").val();
+    var phone = $("#phone").val();
 	var vaga = $("#vaga").val();
 	var vaga_other = $("#vaga_other").val();
     var text = $("#text").val();
