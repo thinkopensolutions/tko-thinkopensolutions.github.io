@@ -1,5 +1,5 @@
 ---
-published: true
+published: false
 categories: team-member
 name: Rogério Ferreira
 image: /assets/team-member-rogerioferreira.jpg
