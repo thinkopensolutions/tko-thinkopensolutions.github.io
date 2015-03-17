@@ -7,6 +7,7 @@ lang: pt-br
 {% include slogan.html %}
 {% include why_how_what.html %}
 
+{% include contact-us.html %}
 {% include services-three.html %}
 
 {% comment %}
