@@ -2331,6 +2331,10 @@ a.portfolio-item-link {
     background: #9e0b0f;
 }
 
+.team .item .team-member-links a.youtube:hover,.member-social.dark a.youtube:hover,header .social li.youtube:hover,footer .social li.youtube:hover {
+    background: #9e0b0f;
+}
+
 .team .item .team-member-links a.linkedin:hover,.member-social.dark a.linkedin:hover,header .social li.linkedin:hover,footer .social li.linkedin:hover {
     background: #069;
 }
