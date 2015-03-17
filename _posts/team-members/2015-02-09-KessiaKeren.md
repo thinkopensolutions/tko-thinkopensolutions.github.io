@@ -1,5 +1,5 @@
 ---
-published: true
+published: false
 categories: team-member
 name: Késsia Keren
 image: /assets/team-member-kessiakeren.jpg

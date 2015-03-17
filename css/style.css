@@ -17,6 +17,10 @@ img {
     max-width: 100%;
 }
 
+.client img {
+	border-radius: 10px;
+}
+
 .logo img {
     height: 55px;
     /*
@@ -1371,6 +1375,7 @@ a.prev.disabled,a.next.disabled {
     background: #fafafa;
     font-weight: 500;
     margin: 0;
+    min-height: 175px;
     padding: 27px 25px;
 	border: 1px solid #ddd;
 	

@@ -18,4 +18,4 @@ lang: pt-br
 {% include our_clients.html %}
 {% comment %}
 {% include latest_posts.html %}
-{% endcomment %}e
+{% endcomment %}
