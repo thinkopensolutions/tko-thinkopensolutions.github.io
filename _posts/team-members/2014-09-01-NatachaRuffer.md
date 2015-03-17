@@ -1,5 +1,5 @@
 ---
-published: true
+published: false
 categories: team-member
 name: Natacha Rüffer
 image: /assets/team-member-natacharuffer.jpg

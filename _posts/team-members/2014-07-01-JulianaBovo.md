@@ -1,5 +1,5 @@
 ---
-published: true
+published: false
 categories: team-member
 name: Juliana Bovo
 image: /assets/team-member-julianabovo.jpg

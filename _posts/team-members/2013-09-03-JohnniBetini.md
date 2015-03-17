@@ -1,5 +1,5 @@
 ---
-published: true
+published: false
 categories: team-member
 name: Johnni Betini
 image: /assets/team-member-johnnibetini.jpg

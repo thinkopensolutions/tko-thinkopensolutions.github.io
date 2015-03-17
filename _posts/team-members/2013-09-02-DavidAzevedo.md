@@ -1,5 +1,5 @@
 ---
-published: true
+published: false
 categories: team-member
 name: David Azevedo
 image: /assets/team-member-davidazevedo.jpg
