@@ -4,7 +4,9 @@ lang: pt-br
 ---
 
 {% include slider.html %}
+{% comment %}
 {% include slogan.html %}
+{% endcomment %}
 {% include why_how_what.html %}
 
 {% include contact-us.html %}
