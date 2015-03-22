@@ -661,13 +661,13 @@ jQuery(document).ready(function () {
 		
 	//Google map
 	jQuery('#maps').gMap({
-		address: "Av. Paulista, 1636 - Bela Vista, São Paulo - SP",
-		zoom: 15,
+		address: "Av. Paulista 491, 1º Andar, Bela Vista, São Paulo/SP",
+		zoom: 14,
 		markers: [{
-			latitude: -23.560938,
-			longitude: -46.65671,
-			html: "<h4>Thinkopen Solutions Brasil</h4>Tel: +55 (11) 3522-8125<br />Email: <a href='mailto:comercial@tkobr.com'>comercial@tkobr.com</a><br />ERP/OpenERP/Fábrica Serviços/Linux",
-			popup: true
+			latitude: -23.5682437,
+			longitude: -46.6483921,
+			html: "<h4>Thinkopen Solutions Brasil</h4>Tel: +55 (11) 4063-9209<br />Email: <a href='mailto:info.br@tkobr.com'>info.br@tkobr.com</a>",
+			popup: true,
 		}]
 	});
 
