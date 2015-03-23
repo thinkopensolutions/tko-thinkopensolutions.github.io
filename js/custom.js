@@ -192,7 +192,7 @@ jQuery(window).load(function() {
       jQuery('.fullwidthbanner').revolution({
         delay: 9000,
         startwidth: 1170,
-        startheight: 470,
+        startheight: 550,
 
         onHoverStop: "on",
         // Stop Banner Timet at Hover on Slide on/off
