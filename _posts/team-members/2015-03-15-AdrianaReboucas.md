@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 categories: team-member
 name: Adriana Rebouças
 image: /assets/team-member-adrianareboucas.jpg
