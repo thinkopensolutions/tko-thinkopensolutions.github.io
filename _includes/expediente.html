@@ -6,4 +6,30 @@
         <li><i class="icon-time"> </i>Sábados - 9h às 11h</li>
         <li><i class="icon-remove-circle"> </i>Domingo - Closed</li>
     </ul>
+    <table>
+    	<tr>
+    		<td>
+			     <i class="icon-envelope"></i> <strong>Email:</strong>
+    		</td>
+    		<td>
+    			<a href="mailto:{% include email.html %}">{% include email.html %}</a>
+    		</td>
+		</tr>
+    	<tr>
+    		<td>
+			     <i class="icon-warning-sign"></i> <strong>Suporte:</strong>
+			</td>
+		    <td>
+		    	<a href="mailto:{% include email-suport.html %}">{% include email-suport.html %}</a>
+    		</td>
+		</tr>
+    	<tr>
+    		<td>
+			     <i class="icon-group"></i> <strong>Talentos:</strong>
+			</td>
+			<td>
+				<a href="mailto:{% include email-recrutamento.html %}">{% include email-recrutamento.html %}</a>
+    		</td>
+		</tr>
+	</table>
 </div>
